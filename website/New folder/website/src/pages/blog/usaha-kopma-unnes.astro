@@ -1,0 +1,61 @@
+---
+// Blog page for Usaha Kopma Unnes
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageTitle = "Usaha Kopma Unnes";
+const pageSlug = "usaha-kopma-unnes";
+---
+
+<BaseLayout title={pageTitle}>
+  <div class="container mx-auto px-4 py-16">
+    <div class="max-w-4xl mx-auto">
+      <!-- Breadcrumb -->
+      <nav class="mb-8 text-sm">
+        <a href="/" class="text-green-600 hover:text-green-700">Beranda</a>
+        <span class="mx-2">/</span>
+        <a href="/blog" class="text-green-600 hover:text-green-700">Blog</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-600">{pageTitle}</span>
+      </nav>
+      
+      <!-- Article Header -->
+      <article class="prose prose-lg max-w-none">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">
+          {pageTitle}
+        </h1>
+        
+        <div class="flex items-center gap-4 text-gray-600 mb-8 pb-8 border-b">
+          <time>2024</time>
+          <span>•</span>
+          <span>KOPMA UNNES</span>
+        </div>
+        
+        <!-- Article Content -->
+        <div class="article-content prose max-w-none">
+          
+        </div>
+      </article>
+      
+      <!-- Contact Info -->
+      <div class="mt-12 pt-8 border-t bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg">
+        <h3 class="text-xl font-bold mb-4">Kontak KOPMA UNNES:</h3>
+        <div class="space-y-2 text-gray-700">
+          <p>📍 Gedung Kewirausahaan UNNES, Sekaran, Gunungpati, Semarang</p>
+          <p>📧 Email: kopmaunnes@gmail.com</p>
+          <p>📱 Instagram: @kopmaunnes</p>
+          <p>🌐 Website: www.kopmaukmunnes.com</p>
+        </div>
+      </div>
+      
+      <!-- Back to Blog -->
+      <div class="mt-8">
+        <a href="/blog" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          </svg>
+          Kembali ke Blog
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

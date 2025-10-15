@@ -1,0 +1,137 @@
+---
+// src/pages/kontak.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactSection from '../components/sections/ContactSection';
+import kopmaData from '../data/kopma-data.json';
+
+export const prerender = true;
+---
+
+<BaseLayout title="Kontak KOPMA UNNES">
+  <main>
+    <section class="hero-section">
+      <div class="container mx-auto px-4 py-16">
+        <h1 class="text-4xl md:text-6xl font-bold text-center mb-8">
+          Hubungi <span class="text-blue-600">KOPMA UNNES</span>
+        </h1>
+        <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto">
+          Kami siap membantu dan melayani Anda. Hubungi kami melalui 
+          berbagai saluran komunikasi yang tersedia.
+        </p>
+      </div>
+    </section>
+    
+    <ContactSection 
+      client:load
+      title={kopmaData.contact.title}
+      subtitle="Kami Siap Membantu Anda"
+      description={kopmaData.contact.description}
+      contactInfo={{
+        address: `${kopmaData.contact.address.street}, ${kopmaData.contact.address.city}, ${kopmaData.contact.address.country} ${kopmaData.contact.address.postalCode}`,
+        phone: kopmaData.contact.phone.join(', '),
+        email: kopmaData.contact.email.join(', '),
+        website: 'www.kopmaukmunnes.com'
+      }}
+      socialMedia={{
+        facebook: kopmaData.contact.socialMedia.find((s: any) => s.platform === 'Facebook')?.url,
+        instagram: kopmaData.contact.socialMedia.find((s: any) => s.platform === 'Instagram')?.url,
+        twitter: kopmaData.contact.socialMedia.find((s: any) => s.platform === 'Twitter')?.url
+      }}
+    />
+    
+    <section class="contact-info py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="contact-card bg-white p-6 rounded-lg shadow-lg text-center">
+            <div class="text-4xl mb-4">📍</div>
+            <h3 class="text-xl font-bold text-blue-600 mb-3">Alamat</h3>
+            <p class="text-gray-700">
+              Gedung KOPMA UNNES<br>
+              Kampus Universitas Negeri Semarang<br>
+              Sekaran, Gunungpati, Semarang<br>
+              Jawa Tengah 50229
+            </p>
+          </div>
+          
+          <div class="contact-card bg-white p-6 rounded-lg shadow-lg text-center">
+            <div class="text-4xl mb-4">📞</div>
+            <h3 class="text-xl font-bold text-blue-600 mb-3">Telepon</h3>
+            <p class="text-gray-700">
+              (024) 8508081<br>
+              (024) 8508082<br>
+              <span class="text-sm text-gray-500">Senin - Jumat: 08.00 - 16.00</span>
+            </p>
+          </div>
+          
+          <div class="contact-card bg-white p-6 rounded-lg shadow-lg text-center">
+            <div class="text-4xl mb-4">📧</div>
+            <h3 class="text-xl font-bold text-blue-600 mb-3">Email</h3>
+            <p class="text-gray-700">
+              info@kopmaunnes.com<br>
+              admin@kopmaunnes.com<br>
+              <span class="text-sm text-gray-500">Respon dalam 24 jam</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="social-media py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Ikuti Kami di Media Sosial</h2>
+        <div class="flex justify-center space-x-6">
+          <a href="https://instagram.com/kopmaunnes" class="social-link bg-pink-500 text-white p-4 rounded-full hover:bg-pink-600 transition-colors">
+            <span class="text-2xl">📷</span>
+            <span class="ml-2">Instagram</span>
+          </a>
+          <a href="https://facebook.com/kopmaunnes" class="social-link bg-blue-600 text-white p-4 rounded-full hover:bg-blue-700 transition-colors">
+            <span class="text-2xl">📘</span>
+            <span class="ml-2">Facebook</span>
+          </a>
+          <a href="https://twitter.com/kopmaunnes" class="social-link bg-blue-400 text-white p-4 rounded-full hover:bg-blue-500 transition-colors">
+            <span class="text-2xl">🐦</span>
+            <span class="ml-2">Twitter</span>
+          </a>
+          <a href="https://youtube.com/kopmaunnes" class="social-link bg-red-600 text-white p-4 rounded-full hover:bg-red-700 transition-colors">
+            <span class="text-2xl">📺</span>
+            <span class="ml-2">YouTube</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+  
+  .hero-section h1 {
+    color: white;
+  }
+  
+  .hero-section p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .contact-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-link:hover {
+    transform: translateY(-3px);
+  }
+</style>

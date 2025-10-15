@@ -1,0 +1,159 @@
+---
+url: "https://kopmaukmunnes.com/blog/page/2/"
+title: "ACARA – Laman 2 – KOPMA UNNES"
+---
+
+[Lewati ke konten](https://kopmaukmunnes.com/blog/page/2/#content "Lewati ke konten")
+
+[![KOPMA UNNES](https://kopmaukmunnes.com/wp-content/uploads/2021/07/cropped-kopma-unnes.png)](https://kopmaukmunnes.com/)
+
+- [BERANDA](https://kopmaukmunnes.com/)
+- [TENTANG KAMI](https://kopmaukmunnes.com/tentang-kami/) Menu Toggle
+  - [PROFIL](https://kopmaukmunnes.com/profil/)
+  - [STRUKTUR ORGANISASI](https://kopmaukmunnes.com/struktur-organisasi/)
+- [KEANGGOTAAN](https://kopmaukmunnes.com/keanggotaan/)
+- [ACARA](https://kopmaukmunnes.com/blog/)
+- [INVENTARIS](https://kopmaukmunnes.com/inventaris/)
+
+[![KOPMA UNNES](https://kopmaukmunnes.com/wp-content/uploads/2021/07/cropped-kopma-unnes.png)](https://kopmaukmunnes.com/)
+
+Main Menu
+
+- [INVENTARIS](https://kopmaukmunnes.com/inventaris/)
+- [KEANGGOTAAN](https://kopmaukmunnes.com/keanggotaan/)
+- [KOPMART](https://kopmaukmunnes.com/elementor-1642/)
+- [Laporan Perkembangan](https://kopmaukmunnes.com/laporan-perkembangan/)
+- [Magazine KOPMA UNNES 2023](https://kopmaukmunnes.com/magazine-kopma-unnes-2023/)
+- [PROFIL](https://kopmaukmunnes.com/profil/)
+- [QnA Toga](https://kopmaukmunnes.com/jadwal-toga/)
+- [STRUKTUR ORGANISASI](https://kopmaukmunnes.com/struktur-organisasi/)
+- [TENTANG KAMI](https://kopmaukmunnes.com/tentang-kami/)
+- [toga](https://kopmaukmunnes.com/elementor-1661/)
+- [Toga Schedule](https://kopmaukmunnes.com/toga-schedule/)
+- [Usaha Kopma Unnes](https://kopmaukmunnes.com/usaha-kopma-unnes/)
+- [BERANDA](https://kopmaukmunnes.com/)
+- [ACARA](https://kopmaukmunnes.com/blog/)
+
+[![](https://kopmaukmunnes.com/wp-content/uploads/2023/07/1-1-1024x682.jpg)](https://kopmaukmunnes.com/mempertajam-pondasi-koperasi-dalam-mewujudkan-kopma-yang-unggul-kreatifinovatif-dan-berdaya-saing-di-era-digital-rapat-anggota-khusus/)
+
+## [Mempertajam Pondasi Koperasi dalam Mewujudkan Kopma yang Unggul, Kreatif,Inovatif dan Berdaya saing di Era Digital \# Rapat Anggota Khusus](https://kopmaukmunnes.com/mempertajam-pondasi-koperasi-dalam-mewujudkan-kopma-yang-unggul-kreatifinovatif-dan-berdaya-saing-di-era-digital-rapat-anggota-khusus/)
+
+[Tinggalkan Komentar](https://kopmaukmunnes.com/mempertajam-pondasi-koperasi-dalam-mewujudkan-kopma-yang-unggul-kreatifinovatif-dan-berdaya-saing-di-era-digital-rapat-anggota-khusus/#respond)
+
+/ [Uncategorized](https://kopmaukmunnes.com/category/uncategorized/) / [admin](https://kopmaukmunnes.com/author/admin_kopma/ "Lihat seluruh tulisan oleh admin")
+
+Semarang, 2 Juli 2023 – Aula Fakultas Ilmu Pendidikan Universitas Negeri Semarang menjadi saksi kehebohan saat KOPMA UNNES menggelar Rapat Anggota Khusus (RAK) yang seru! Acara ini digelar dengan tujuan membahas dan menyetujui Anggaran Dasar (AD) serta Kriteria Penasihat KOPMA UNNES. Divisi Inventaris KOPMA UNNES turut berperan penting dengan program kerja bidang Administrasi Umum, khususnya \[…\]
+
+[Mempertajam Pondasi Koperasi dalam Mewujudkan Kopma yang Unggul, Kreatif,Inovatif dan Berdaya saing di Era Digital # Rapat Anggota Khusus Read More »](https://kopmaukmunnes.com/mempertajam-pondasi-koperasi-dalam-mewujudkan-kopma-yang-unggul-kreatifinovatif-dan-berdaya-saing-di-era-digital-rapat-anggota-khusus/)
+
+[![](https://kopmaukmunnes.com/wp-content/uploads/2023/07/sos-3-1024x768.jpg)](https://kopmaukmunnes.com/berkah-bersedekah-kopma-unnes-galang-infak-untuk-renovasi-masjid-al-fatah-di-semarang/)
+
+## [Berkah Bersedekah: KOPMA UNNES Galang Infak untuk Renovasi Masjid Al-Fatah di Semarang](https://kopmaukmunnes.com/berkah-bersedekah-kopma-unnes-galang-infak-untuk-renovasi-masjid-al-fatah-di-semarang/)
+
+[1 Komentar](https://kopmaukmunnes.com/berkah-bersedekah-kopma-unnes-galang-infak-untuk-renovasi-masjid-al-fatah-di-semarang/#comments)
+
+/ [Uncategorized](https://kopmaukmunnes.com/category/uncategorized/) / [admin](https://kopmaukmunnes.com/author/admin_kopma/ "Lihat seluruh tulisan oleh admin")
+
+Semarang, 25 Juni 2023 – Aksi kebaikan KOPMA UNNES terus berlanjut dengan dilaksanakannya kegiatan Infak Masjid. Kali ini, fokus mereka adalah mendukung dan membiayai proses renovasi Masjid Al-Fatah yang berlokasi di Kelurahan Kalisegoro. Infak masjid ini bertujuan agar para jamaah dapat menikmati kenyamanan yang lebih baik dalam menjalankan ibadah. Dengan adanya partisipasi aktif dalam kegiatan
+
+[Berkah Bersedekah: KOPMA UNNES Galang Infak untuk Renovasi Masjid Al-Fatah di Semarang Read More »](https://kopmaukmunnes.com/berkah-bersedekah-kopma-unnes-galang-infak-untuk-renovasi-masjid-al-fatah-di-semarang/)
+
+[![](https://kopmaukmunnes.com/wp-content/uploads/2023/07/sosial-1-1024x768.jpg)](https://kopmaukmunnes.com/berbagi-cinta-dan-harapan-peran-donasi-dalam-mendukung-panti-asuhan-dan-masa-depan-anak-anak-kopma-unnes-berbagi/)
+
+## [Berbagi Cinta dan Harapan: Peran Donasi dalam Mendukung Panti Asuhan dan Masa Depan Anak-Anak \# KOPMA UNNES BERBAGI](https://kopmaukmunnes.com/berbagi-cinta-dan-harapan-peran-donasi-dalam-mendukung-panti-asuhan-dan-masa-depan-anak-anak-kopma-unnes-berbagi/)
+
+[Tinggalkan Komentar](https://kopmaukmunnes.com/berbagi-cinta-dan-harapan-peran-donasi-dalam-mendukung-panti-asuhan-dan-masa-depan-anak-anak-kopma-unnes-berbagi/#respond)
+
+/ [Uncategorized](https://kopmaukmunnes.com/category/uncategorized/) / [admin](https://kopmaukmunnes.com/author/admin_kopma/ "Lihat seluruh tulisan oleh admin")
+
+Semarang, 9 Juni 2023 – Hangatnya kepedulian hadir di Panti Asuhan Al Ma’hadul Qorona di Ungaran saat KOPMA UNNES melakukan kunjungan istimewa. Misi mulia mereka adalah menyerahkan hasil donasi untuk membantu pulih dari bencana kebakaran yang mengenai panti asuhan ini pada tanggal 19 Mei 2023. Kisah kebaikan ini menjadi nyata berkat dukungan semua pihak yang
+
+[Berbagi Cinta dan Harapan: Peran Donasi dalam Mendukung Panti Asuhan dan Masa Depan Anak-Anak # KOPMA UNNES BERBAGI Read More »](https://kopmaukmunnes.com/berbagi-cinta-dan-harapan-peran-donasi-dalam-mendukung-panti-asuhan-dan-masa-depan-anak-anak-kopma-unnes-berbagi/)
+
+[![](https://kopmaukmunnes.com/wp-content/uploads/2023/07/1-1024x461.jpg)](https://kopmaukmunnes.com/mengenal-pengurus-melalui-pelatihan-kepengurusan-kopma-unnes-2023-pelatihan-kepengurusan/)
+
+## [Mengenal Pengurus melalui Pelatihan Kepengurusan KOPMA UNNES 2023 \#PELATIHAN KEPENGURUSAN](https://kopmaukmunnes.com/mengenal-pengurus-melalui-pelatihan-kepengurusan-kopma-unnes-2023-pelatihan-kepengurusan/)
+
+[Tinggalkan Komentar](https://kopmaukmunnes.com/mengenal-pengurus-melalui-pelatihan-kepengurusan-kopma-unnes-2023-pelatihan-kepengurusan/#respond)
+
+/ [Uncategorized](https://kopmaukmunnes.com/category/uncategorized/) / [admin](https://kopmaukmunnes.com/author/admin_kopma/ "Lihat seluruh tulisan oleh admin")
+
+Foto Bersama Pemateri dan Peserta Pelatihan Kepengurusan Sabtu-Minggu, 1-2 April 2023, Koperasi Mahasiswa Universitas Negeri Semarang menyelenggarakan Pelatihan Kepengurusan selama dua hari yang diikuti oleh pengurus, staf, dan anggota KOPMA UNNES. Materi pelatihan kepengurusan tersebut disampaikan oleh kepala bidang masing-masing. Hari pertama diisi dengan materi dari Bidang Keuangan dan Bidang Usaha. Pelatihan hari pertama ini
+
+[Mengenal Pengurus melalui Pelatihan Kepengurusan KOPMA UNNES 2023 #PELATIHAN KEPENGURUSAN Read More »](https://kopmaukmunnes.com/mengenal-pengurus-melalui-pelatihan-kepengurusan-kopma-unnes-2023-pelatihan-kepengurusan/)
+
+[![](https://kopmaukmunnes.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-15-at-14.36.37-1024x768.jpg)](https://kopmaukmunnes.com/silahturahmi-eksternal-kopma-unnes-dan-kopma-bm-polines/)
+
+## [SILAHTURAHMI EKSTERNAL \#KOPMA UNNES DAN KOPMA BM POLINES](https://kopmaukmunnes.com/silahturahmi-eksternal-kopma-unnes-dan-kopma-bm-polines/)
+
+[Tinggalkan Komentar](https://kopmaukmunnes.com/silahturahmi-eksternal-kopma-unnes-dan-kopma-bm-polines/#respond)
+
+/ [Uncategorized](https://kopmaukmunnes.com/category/uncategorized/) / [admin](https://kopmaukmunnes.com/author/admin_kopma/ "Lihat seluruh tulisan oleh admin")
+
+Dokumentasi bersama KOPMA Polines dan KOPMA UNNES Semarang, 9 April 2023 – KOPMA UNNES melakukan kunjungan usaha ke KOPMA BM Polines dengan tujuan untuk menjalin kerjasama dan hubungan yang baik antara KOPMA UNNES denga KOPMA BM Polines. Serta mengetahui susunan kepengurusan dan progja-progja yang ada di KOPMA BM Polines. Dihadiri oleh 22 orang terdiri 2
+
+[SILAHTURAHMI EKSTERNAL #KOPMA UNNES DAN KOPMA BM POLINES Read More »](https://kopmaukmunnes.com/silahturahmi-eksternal-kopma-unnes-dan-kopma-bm-polines/)
+
+[![](https://kopmaukmunnes.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-15-at-13.58.10-1-1024x768.jpg)](https://kopmaukmunnes.com/mempererat-tali-silahturahmi-keluarga-kopma-unnes-halal-bihalal/)
+
+## [MEMPERERAT TALI SILAHTURAHMI KELUARGA KOPMA UNNES \# HALAL BIHALAL](https://kopmaukmunnes.com/mempererat-tali-silahturahmi-keluarga-kopma-unnes-halal-bihalal/)
+
+[Tinggalkan Komentar](https://kopmaukmunnes.com/mempererat-tali-silahturahmi-keluarga-kopma-unnes-halal-bihalal/#respond)
+
+/ [Uncategorized](https://kopmaukmunnes.com/category/uncategorized/) / [admin](https://kopmaukmunnes.com/author/admin_kopma/ "Lihat seluruh tulisan oleh admin")
+
+Semarang, 29 April 2023 – KOPMA UNNES melaksanakan Halal Bihalal untuk mempererat tali silaturahmi dan kebersamaan antara pengawas, Pengurus, Staf, Anggota dan alumni dengan pembina KOPMA UNNES. Kegiatan ini dihadiri 27 orang terdiri dari 2 pengawas, 13 pengurus, 6 staf, 2 alumni dan 5 anggota. Tausiyah oleh Ustadz Munif Ustadz Munif menyampaikan tausiyah yang mengangkat tema “Keutamaan Halal
+
+[MEMPERERAT TALI SILAHTURAHMI KELUARGA KOPMA UNNES # HALAL BIHALAL Read More »](https://kopmaukmunnes.com/mempererat-tali-silahturahmi-keluarga-kopma-unnes-halal-bihalal/)
+
+[![](https://kopmaukmunnes.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-15-at-13.17.54-1024x576.jpg)](https://kopmaukmunnes.com/silahturahmi-eksternal-bersama-kopma-uii/)
+
+## [SILAHTURAHMI EKSTERNAL \# BERSAMA KOPMA UII](https://kopmaukmunnes.com/silahturahmi-eksternal-bersama-kopma-uii/)
+
+[Tinggalkan Komentar](https://kopmaukmunnes.com/silahturahmi-eksternal-bersama-kopma-uii/#respond)
+
+/ [Uncategorized](https://kopmaukmunnes.com/category/uncategorized/) / [admin](https://kopmaukmunnes.com/author/admin_kopma/ "Lihat seluruh tulisan oleh admin")
+
+Semarang, 1 juni 2023 – KOPMA UNNES menerima kunjungan silaturahmi eksternal dari kopma UII bertujuan untuk menjalin kerjasama dan komunikasi antar kedua kopma UNNES dan kopma UII. Kegiatan penerimaan silaturahmi dilaksanakan pada hari Kamis, 1 Juni 2023 di Aula FEB UNNES dengan dihadiri 31 orang yang terdiri 2 pengawas, 18 pengurus dan 11 staf Kopma
+
+[SILAHTURAHMI EKSTERNAL # BERSAMA KOPMA UII Read More »](https://kopmaukmunnes.com/silahturahmi-eksternal-bersama-kopma-uii/)
+
+[![](https://kopmaukmunnes.com/wp-content/uploads/2023/06/dkdkkms-1024x683.jpg)](https://kopmaukmunnes.com/revolusi-kopma-menuju-awal-perubahan-gebyar-kopma-unnes-2023/)
+
+## [REVOLUSI KOPMA, MENUJU AWAL PERUBAHAN\# GEBYAR KOPMA UNNES 2023](https://kopmaukmunnes.com/revolusi-kopma-menuju-awal-perubahan-gebyar-kopma-unnes-2023/)
+
+[Tinggalkan Komentar](https://kopmaukmunnes.com/revolusi-kopma-menuju-awal-perubahan-gebyar-kopma-unnes-2023/#respond)
+
+/ [Uncategorized](https://kopmaukmunnes.com/category/uncategorized/) / [admin](https://kopmaukmunnes.com/author/admin_kopma/ "Lihat seluruh tulisan oleh admin")
+
+Minggu, 14 Mei 2023 telah terlaksana Gebyar Koperasi Mahasiswa Universitas Negeri Semarang dalam rangka peringatan hari anniversary yang ke-41 tahun. Dengan mengusung tema ”Revolusi KOPMA, Menuju Awal Perubahan” Gebyar KOPMA UNNES 2023 merupakan inovasi baru dengan menghadirkan bentuk festival. Terdapat serangkaian perlombaan yang dihadirkan dalam memeriahkan Gebyar KOPMA UNNES 2023. Salah satu realisasi dari inovasi
+
+[REVOLUSI KOPMA, MENUJU AWAL PERUBAHAN# GEBYAR KOPMA UNNES 2023 Read More »](https://kopmaukmunnes.com/revolusi-kopma-menuju-awal-perubahan-gebyar-kopma-unnes-2023/)
+
+[![](https://kopmaukmunnes.com/wp-content/uploads/2023/06/a-1-1024x576.jpg)](https://kopmaukmunnes.com/kenali-diri-tingkatkan-keterampilan-dan-mari-berbicara-belajar-public-speaking-bersama-kopma-unnes-2023/)
+
+## [KENALI DIRI, TINGKATKAN KETERAMPILAN, DAN MARI BERBICARA. BELAJAR PUBLIC SPEAKING BERSAMA KOPMA UNNES 2023](https://kopmaukmunnes.com/kenali-diri-tingkatkan-keterampilan-dan-mari-berbicara-belajar-public-speaking-bersama-kopma-unnes-2023/)
+
+[Tinggalkan Komentar](https://kopmaukmunnes.com/kenali-diri-tingkatkan-keterampilan-dan-mari-berbicara-belajar-public-speaking-bersama-kopma-unnes-2023/#respond)
+
+/ [Uncategorized](https://kopmaukmunnes.com/category/uncategorized/) / [admin](https://kopmaukmunnes.com/author/admin_kopma/ "Lihat seluruh tulisan oleh admin")
+
+Foto Bersama Kegiatan Pelatihan Keterampilan Public Speaking Pada hari Sabtu, PSDA devisi Pelatihan  KOPMA UNNES mengadakan kegiatan public speaking yang bertujuan mengajak seluruh anggotanya untuk belajar bagimana mengenali diri mereka melalui peningkatan keterampilan dengan cara berani untuk berbicara. Kegiatan ini diadakan pada tanggal 27 Mei 2023 bertempat di Gedung C4-R329(FISIP) pukul 08.30 WIB. Pemaparan Materi
+
+[KENALI DIRI, TINGKATKAN KETERAMPILAN, DAN MARI BERBICARA. BELAJAR PUBLIC SPEAKING BERSAMA KOPMA UNNES 2023 Read More »](https://kopmaukmunnes.com/kenali-diri-tingkatkan-keterampilan-dan-mari-berbicara-belajar-public-speaking-bersama-kopma-unnes-2023/)
+
+[![](https://kopmaukmunnes.com/wp-content/uploads/2023/06/ch1-1024x448.jpg)](https://kopmaukmunnes.com/berbagi-keberkahan-dibulan-ramadhan-2-kopma-charity/)
+
+## [Berbagi Keberkahan dibulan Ramadhan 2 \# KOPMA CHARITY](https://kopmaukmunnes.com/berbagi-keberkahan-dibulan-ramadhan-2-kopma-charity/)
+
+[Tinggalkan Komentar](https://kopmaukmunnes.com/berbagi-keberkahan-dibulan-ramadhan-2-kopma-charity/#respond)
+
+/ [Uncategorized](https://kopmaukmunnes.com/category/uncategorized/) / [admin](https://kopmaukmunnes.com/author/admin_kopma/ "Lihat seluruh tulisan oleh admin")
+
+Semarang, 14 April 2023 – KOPMA UNNES melaksanakan salah satu program kerja-nya yaitu, Kopma Charity yang bertujuan untuk menumbuhkan rasa simpati dan empati serta kepedulian sosial dari anggota Kopma Unnes kepada anak-anak panti. Kegiatan Kopma Charity ini dilaksanakan pada hari Jum’at, 14 April 2023 di Panti Asuhan Darul Hijrah dengan peserta hadir sebanyak 43 orang.
+
+[Berbagi Keberkahan dibulan Ramadhan 2 # KOPMA CHARITY Read More »](https://kopmaukmunnes.com/berbagi-keberkahan-dibulan-ramadhan-2-kopma-charity/)
+
+[← Previous](https://kopmaukmunnes.com/blog/) [1](https://kopmaukmunnes.com/blog/) 2 [3](https://kopmaukmunnes.com/blog/page/3/)… [5](https://kopmaukmunnes.com/blog/page/5/) [Next →](https://kopmaukmunnes.com/blog/page/3/)
+
+Copyright © 2025 KOPMA UNNES \| Powered by [Tema WordPress Astra](https://wpastra.com/)

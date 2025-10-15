@@ -1,0 +1,478 @@
+/* src/styles/components.css */
+/* Component-specific styles for KOPMA UNNES Website */
+
+/* Header Component */
+.header {
+  @apply bg-white shadow-sm border-b border-gray-200;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.header.scrolled {
+  @apply shadow-md;
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.header-brand {
+  @apply text-2xl font-bold text-primary-600;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header-nav {
+  @apply hidden md:flex space-x-8;
+}
+
+.header-nav-mobile {
+  @apply md:hidden;
+}
+
+.header-nav-link {
+  @apply text-gray-700 hover:text-primary-600 transition-colors duration-200 font-medium;
+}
+
+.header-nav-link.active {
+  @apply text-primary-600;
+}
+
+/* Footer Component */
+.footer {
+  @apply bg-gray-900 text-white;
+}
+
+.footer-content {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+}
+
+.footer-section {
+  @apply mb-8;
+}
+
+.footer-title {
+  @apply text-lg font-semibold mb-4;
+}
+
+.footer-link {
+  @apply text-gray-300 hover:text-white transition-colors duration-200;
+}
+
+.footer-bottom {
+  @apply border-t border-gray-800 pt-8 mt-8;
+}
+
+/* Hero Section */
+.hero {
+  @apply relative overflow-hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.hero-content {
+  @apply relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20;
+}
+
+.hero-title {
+  @apply text-4xl md:text-6xl font-bold text-white mb-6;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtitle {
+  @apply text-xl md:text-2xl text-gray-100 mb-8;
+}
+
+.hero-cta {
+  @apply flex flex-col sm:flex-row gap-4;
+}
+
+.hero-bg {
+  @apply absolute inset-0;
+  background: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="4"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+/* About Section */
+.about {
+  @apply py-20 bg-gray-50;
+}
+
+.about-content {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.about-grid {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-12 items-center;
+}
+
+.about-text {
+  @apply space-y-6;
+}
+
+.about-stats {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-8 mt-12;
+}
+
+.about-stat {
+  @apply text-center;
+}
+
+.about-stat-number {
+  @apply text-3xl md:text-4xl font-bold text-primary-600 mb-2;
+}
+
+.about-stat-label {
+  @apply text-gray-600 font-medium;
+}
+
+/* Structure Section */
+.structure {
+  @apply py-20;
+}
+
+.structure-content {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.structure-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.structure-card {
+  @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300;
+}
+
+.structure-card-icon {
+  @apply w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4;
+}
+
+.structure-card-title {
+  @apply text-xl font-semibold text-gray-900 mb-2;
+}
+
+.structure-card-description {
+  @apply text-gray-600;
+}
+
+/* Services Section */
+.services {
+  @apply py-20 bg-gray-50;
+}
+
+.services-content {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.services-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.service-card {
+  @apply bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-all duration-300;
+}
+
+.service-card:hover {
+  @apply transform -translate-y-2;
+}
+
+.service-icon {
+  @apply w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6;
+}
+
+.service-title {
+  @apply text-xl font-semibold text-gray-900 mb-4;
+}
+
+.service-description {
+  @apply text-gray-600 mb-6;
+}
+
+.service-features {
+  @apply space-y-2;
+}
+
+.service-feature {
+  @apply flex items-center text-sm text-gray-600;
+}
+
+.service-feature-icon {
+  @apply w-4 h-4 text-primary-600 mr-2;
+}
+
+/* Contact Section */
+.contact {
+  @apply py-20;
+}
+
+.contact-content {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.contact-grid {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-12;
+}
+
+.contact-info {
+  @apply space-y-8;
+}
+
+.contact-item {
+  @apply flex items-start space-x-4;
+}
+
+.contact-icon {
+  @apply w-6 h-6 text-primary-600 mt-1;
+}
+
+.contact-details {
+  @apply space-y-2;
+}
+
+.contact-label {
+  @apply font-semibold text-gray-900;
+}
+
+.contact-value {
+  @apply text-gray-600;
+}
+
+.contact-form {
+  @apply bg-white rounded-lg shadow-md p-8;
+}
+
+.form-group {
+  @apply mb-6;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-2;
+}
+
+.form-input {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200;
+}
+
+.form-textarea {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200 resize-none;
+}
+
+.form-submit {
+  @apply w-full bg-primary-600 text-white py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors duration-200 font-medium;
+}
+
+/* Cards */
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden;
+}
+
+.card-header {
+  @apply px-6 py-4 border-b border-gray-200;
+}
+
+.card-title {
+  @apply text-lg font-semibold text-gray-900;
+}
+
+.card-body {
+  @apply px-6 py-4;
+}
+
+.card-footer {
+  @apply px-6 py-4 bg-gray-50 border-t border-gray-200;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+}
+
+.btn-secondary {
+  @apply bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-500;
+}
+
+.btn-outline {
+  @apply border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white focus:ring-primary-500;
+}
+
+.btn-lg {
+  @apply px-8 py-4 text-lg;
+}
+
+.btn-sm {
+  @apply px-4 py-2 text-sm;
+}
+
+/* Modals */
+.modal-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50;
+}
+
+.modal-content {
+  @apply bg-white rounded-lg shadow-xl max-w-md w-full max-h-screen overflow-y-auto;
+}
+
+.modal-header {
+  @apply px-6 py-4 border-b border-gray-200 flex items-center justify-between;
+}
+
+.modal-title {
+  @apply text-lg font-semibold text-gray-900;
+}
+
+.modal-close {
+  @apply text-gray-400 hover:text-gray-600 transition-colors duration-200;
+}
+
+.modal-body {
+  @apply px-6 py-4;
+}
+
+.modal-footer {
+  @apply px-6 py-4 border-t border-gray-200 flex justify-end space-x-3;
+}
+
+/* Loading States */
+.loading-spinner {
+  @apply animate-spin rounded-full border-4 border-gray-200 border-t-primary-600;
+}
+
+.loading-text {
+  @apply text-gray-600;
+}
+
+.skeleton {
+  @apply animate-pulse bg-gray-200 rounded;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+.slide-down {
+  animation: slideDown 0.5s ease-out;
+}
+
+.slide-left {
+  animation: slideLeft 0.5s ease-out;
+}
+
+.slide-right {
+  animation: slideRight 0.5s ease-out;
+}
+
+.bounce-in {
+  animation: bounceIn 0.6s ease-out;
+}
+
+.scale-in {
+  animation: scaleIn 0.3s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    @apply text-3xl;
+  }
+  
+  .hero-subtitle {
+    @apply text-lg;
+  }
+  
+  .about-grid {
+    @apply grid-cols-1;
+  }
+  
+  .structure-grid {
+    @apply grid-cols-1;
+  }
+  
+  .services-grid {
+    @apply grid-cols-1;
+  }
+  
+  .contact-grid {
+    @apply grid-cols-1;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    @apply text-2xl;
+  }
+  
+  .hero-subtitle {
+    @apply text-base;
+  }
+  
+  .card-body {
+    @apply px-4 py-3;
+  }
+  
+  .btn {
+    @apply px-4 py-2 text-sm;
+  }
+}
+
+/* Dark Mode Support */
+[data-theme="dark"] .header {
+  @apply bg-gray-900 border-gray-700;
+}
+
+[data-theme="dark"] .header-brand {
+  @apply text-white;
+}
+
+[data-theme="dark"] .header-nav-link {
+  @apply text-gray-300 hover:text-white;
+}
+
+[data-theme="dark"] .card {
+  @apply bg-gray-800 border-gray-700;
+}
+
+[data-theme="dark"] .card-title {
+  @apply text-white;
+}
+
+[data-theme="dark"] .form-input {
+  @apply bg-gray-800 border-gray-600 text-white;
+}
+
+[data-theme="dark"] .form-textarea {
+  @apply bg-gray-800 border-gray-600 text-white;
+}
+
+/* Print Styles */
+@media print {
+  .header,
+  .footer,
+  .btn,
+  .modal-overlay {
+    display: none !important;
+  }
+  
+  .hero {
+    background: none !important;
+    color: black !important;
+  }
+  
+  .card {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+}
+
+
+
+

@@ -1,0 +1,73 @@
+---
+// src/pages/about.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AboutSection from '../components/sections/AboutSection';
+import kopmaData from '../data/kopma-data.json';
+
+export const prerender = true;
+---
+
+<BaseLayout title="Tentang KOPMA UNNES - Koperasi Mahasiswa Universitas Negeri Semarang">
+  <main>
+    <section class="hero-section">
+      <div class="container mx-auto px-4 py-16">
+        <h1 class="text-4xl md:text-6xl font-bold text-center mb-8">
+          Tentang <span class="text-blue-600">KOPMA UNNES</span>
+        </h1>
+        <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto">
+          Koperasi Mahasiswa Universitas Negeri Semarang yang berkomitmen untuk 
+          memberikan pelayanan terbaik bagi seluruh mahasiswa UNNES.
+        </p>
+      </div>
+    </section>
+    
+    <AboutSection 
+      client:load
+      title={kopmaData.about.title}
+      subtitle="Koperasi Mahasiswa"
+      description={kopmaData.about.description}
+      features={kopmaData.about.features}
+      stats={kopmaData.about.stats.map((s: any) => ({ value: s.number, label: s.label, description: '' }))}
+      ctaText="Lebih Lanjut"
+      ctaLink="/about"
+    />
+    
+    <section class="vision-mission py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold text-blue-600 mb-4">Visi</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Menjadi koperasi mahasiswa yang unggul, mandiri, dan berdaya saing 
+              dalam memberikan pelayanan terbaik bagi seluruh mahasiswa UNNES.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold text-blue-600 mb-4">Misi</h3>
+            <ul class="text-gray-700 space-y-2">
+              <li>• Meningkatkan kesejahteraan mahasiswa melalui layanan koperasi</li>
+              <li>• Mengembangkan jiwa kewirausahaan mahasiswa</li>
+              <li>• Membangun jaringan kemitraan yang strategis</li>
+              <li>• Menjaga transparansi dan akuntabilitas organisasi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+  
+  .hero-section h1 {
+    color: white;
+  }
+  
+  .hero-section p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+</style>

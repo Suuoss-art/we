@@ -1,0 +1,217 @@
+---
+// src/components/layout/Navigation.astro
+const menuItems = [
+  { name: 'BERANDA', href: '/', icon: '🏠' },
+  { name: 'TENTANG KAMI', href: '/tentang', icon: 'ℹ️' },
+  { name: 'KEANGGOTAAN', href: '/keanggotaan', icon: '👥' },
+  { name: 'ACARA', href: '/blog', icon: '📅' },
+  { name: 'INVENTARIS', href: '/inventaris', icon: '📦' }
+];
+---
+
+<nav class="navigation">
+  <ul class="nav-list">
+    {menuItems.map((item) => (
+      <li class="nav-item">
+        <a href={item.href} class="nav-link">
+          <span class="nav-icon">{item.icon}</span>
+          <span class="nav-text">{item.name}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  
+  <!-- CTA Button -->
+  <div class="nav-cta">
+    <a href="/keanggotaan" class="cta-button">
+      Daftar Sekarang!
+    </a>
+  </div>
+</nav>
+
+<style>
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    transition: width 0.3s ease;
+    z-index: -1;
+  }
+  
+  .nav-link:hover::before {
+    width: 100%;
+  }
+  
+  .nav-link:hover {
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .nav-icon {
+    font-size: 1.125rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-link:hover .nav-icon {
+    transform: scale(1.1);
+  }
+  
+  .nav-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .nav-cta {
+    margin-left: 1rem;
+  }
+  
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+  }
+  
+  /* Mobile Navigation */
+  @media (max-width: 768px) {
+    .navigation {
+      position: fixed;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      flex-direction: column;
+      padding: 2rem;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+      transition: top 0.3s ease;
+      z-index: 999;
+    }
+    
+    .navigation.active {
+      top: 80px;
+    }
+    
+    .nav-list {
+      flex-direction: column;
+      width: 100%;
+      gap: 0.5rem;
+    }
+    
+    .nav-link {
+      justify-content: flex-start;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      background: #f8fafc;
+    }
+    
+    .nav-link:hover {
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+    }
+    
+    .nav-cta {
+      margin-left: 0;
+      margin-top: 1rem;
+      width: 100%;
+    }
+    
+    .cta-button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  /* Tablet Navigation */
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .nav-list {
+      gap: 1rem;
+    }
+    
+    .nav-text {
+      display: none;
+    }
+    
+    .nav-link {
+      padding: 0.75rem;
+      justify-content: center;
+    }
+  }
+</style>
+
+<script>
+  // Active link highlighting
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+      link.classList.add('active');
+    }
+  });
+  
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const href = (e.currentTarget as HTMLAnchorElement).getAttribute('href');
+      if (href) {
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+    });
+  });
+</script>

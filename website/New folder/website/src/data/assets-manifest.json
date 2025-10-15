@@ -1,0 +1,342 @@
+{
+  "version": "1.0.0",
+  "generated": "2024-01-15T10:30:00Z",
+  "assets": {
+    "images": {
+      "logo": {
+        "src": "/assets/images/logo.png",
+        "alt": "KOPMA UNNES Logo",
+        "width": 200,
+        "height": 60,
+        "format": "png",
+        "size": 15420,
+        "optimized": true
+      },
+      "hero": {
+        "src": "/assets/images/hero-bg.jpg",
+        "alt": "KOPMA UNNES Hero Background",
+        "width": 1920,
+        "height": 1080,
+        "format": "jpg",
+        "size": 245680,
+        "optimized": true,
+        "variants": {
+          "thumbnail": "/assets/images/hero-bg-thumb.jpg",
+          "small": "/assets/images/hero-bg-small.jpg",
+          "medium": "/assets/images/hero-bg-medium.jpg",
+          "large": "/assets/images/hero-bg-large.jpg"
+        }
+      },
+      "about": {
+        "src": "/assets/images/about-us.jpg",
+        "alt": "About KOPMA UNNES",
+        "width": 800,
+        "height": 600,
+        "format": "jpg",
+        "size": 125430,
+        "optimized": true
+      },
+      "structure": {
+        "src": "/assets/images/organizational-structure.jpg",
+        "alt": "KOPMA UNNES Organizational Structure",
+        "width": 1000,
+        "height": 800,
+        "format": "jpg",
+        "size": 189450,
+        "optimized": true
+      },
+      "services": {
+        "src": "/assets/images/services.jpg",
+        "alt": "KOPMA UNNES Services",
+        "width": 1200,
+        "height": 800,
+        "format": "jpg",
+        "size": 156780,
+        "optimized": true
+      },
+      "contact": {
+        "src": "/assets/images/contact-bg.jpg",
+        "alt": "Contact KOPMA UNNES",
+        "width": 1600,
+        "height": 900,
+        "format": "jpg",
+        "size": 198760,
+        "optimized": true
+      }
+    },
+    "icons": {
+      "favicon": {
+        "src": "/assets/icons/favicon.ico",
+        "sizes": "16x16,32x32,48x48",
+        "type": "image/x-icon"
+      },
+      "apple-touch-icon": {
+        "src": "/assets/icons/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      "android-chrome": {
+        "src": "/assets/icons/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      "android-chrome-512": {
+        "src": "/assets/icons/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    },
+    "fonts": {
+      "inter": {
+        "src": "/assets/fonts/inter-regular.woff2",
+        "family": "Inter",
+        "weight": "400",
+        "style": "normal",
+        "format": "woff2",
+        "size": 45670
+      },
+      "inter-medium": {
+        "src": "/assets/fonts/inter-medium.woff2",
+        "family": "Inter",
+        "weight": "500",
+        "style": "normal",
+        "format": "woff2",
+        "size": 48920
+      },
+      "inter-semibold": {
+        "src": "/assets/fonts/inter-semibold.woff2",
+        "family": "Inter",
+        "weight": "600",
+        "style": "normal",
+        "format": "woff2",
+        "size": 51230
+      },
+      "inter-bold": {
+        "src": "/assets/fonts/inter-bold.woff2",
+        "family": "Inter",
+        "weight": "700",
+        "style": "normal",
+        "format": "woff2",
+        "size": 53480
+      },
+      "poppins": {
+        "src": "/assets/fonts/poppins-regular.woff2",
+        "family": "Poppins",
+        "weight": "400",
+        "style": "normal",
+        "format": "woff2",
+        "size": 67890
+      },
+      "poppins-medium": {
+        "src": "/assets/fonts/poppins-medium.woff2",
+        "family": "Poppins",
+        "weight": "500",
+        "style": "normal",
+        "format": "woff2",
+        "size": 71230
+      },
+      "poppins-semibold": {
+        "src": "/assets/fonts/poppins-semibold.woff2",
+        "family": "Poppins",
+        "weight": "600",
+        "style": "normal",
+        "format": "woff2",
+        "size": 74560
+      },
+      "poppins-bold": {
+        "src": "/assets/fonts/poppins-bold.woff2",
+        "family": "Poppins",
+        "weight": "700",
+        "style": "normal",
+        "format": "woff2",
+        "size": 77890
+      }
+    },
+    "documents": {
+      "constitution": {
+        "src": "/assets/documents/constitution.pdf",
+        "title": "KOPMA UNNES Constitution",
+        "type": "application/pdf",
+        "size": 245680,
+        "pages": 15,
+        "language": "id"
+      },
+      "regulation": {
+        "src": "/assets/documents/regulation.pdf",
+        "title": "KOPMA UNNES Regulation",
+        "type": "application/pdf",
+        "size": 189450,
+        "pages": 12,
+        "language": "id"
+      },
+      "annual-report": {
+        "src": "/assets/documents/annual-report-2023.pdf",
+        "title": "KOPMA UNNES Annual Report 2023",
+        "type": "application/pdf",
+        "size": 456780,
+        "pages": 25,
+        "language": "id"
+      }
+    },
+    "videos": {
+      "intro": {
+        "src": "/assets/videos/intro.mp4",
+        "title": "KOPMA UNNES Introduction Video",
+        "type": "video/mp4",
+        "size": 5678900,
+        "duration": 120,
+        "width": 1920,
+        "height": 1080,
+        "thumbnail": "/assets/videos/intro-thumb.jpg"
+      },
+      "services": {
+        "src": "/assets/videos/services.mp4",
+        "title": "KOPMA UNNES Services Video",
+        "type": "video/mp4",
+        "size": 4567800,
+        "duration": 90,
+        "width": 1920,
+        "height": 1080,
+        "thumbnail": "/assets/videos/services-thumb.jpg"
+      }
+    },
+    "audio": {
+      "hymn": {
+        "src": "/assets/audio/kopma-hymn.mp3",
+        "title": "KOPMA UNNES Hymn",
+        "type": "audio/mpeg",
+        "size": 3456780,
+        "duration": 180,
+        "bitrate": 128
+      },
+      "announcement": {
+        "src": "/assets/audio/announcement.mp3",
+        "title": "KOPMA UNNES Announcement",
+        "type": "audio/mpeg",
+        "size": 1234567,
+        "duration": 60,
+        "bitrate": 128
+      }
+    }
+  },
+  "optimization": {
+    "images": {
+      "totalSize": 1024567,
+      "optimizedSize": 512340,
+      "savings": 512227,
+      "savingsPercentage": 50,
+      "formats": {
+        "webp": 45,
+        "jpeg": 35,
+        "png": 15,
+        "svg": 5
+      }
+    },
+    "fonts": {
+      "totalSize": 456780,
+      "optimizedSize": 234560,
+      "savings": 222220,
+      "savingsPercentage": 49,
+      "formats": {
+        "woff2": 80,
+        "woff": 15,
+        "ttf": 5
+      }
+    },
+    "documents": {
+      "totalSize": 891910,
+      "compressedSize": 445955,
+      "savings": 445955,
+      "savingsPercentage": 50
+    },
+    "videos": {
+      "totalSize": 10246700,
+      "compressedSize": 5123350,
+      "savings": 5123350,
+      "savingsPercentage": 50,
+      "formats": {
+        "mp4": 70,
+        "webm": 20,
+        "ogg": 10
+      }
+    },
+    "audio": {
+      "totalSize": 4691347,
+      "compressedSize": 2345674,
+      "savings": 2345673,
+      "savingsPercentage": 50,
+      "formats": {
+        "mp3": 60,
+        "ogg": 25,
+        "wav": 15
+      }
+    }
+  },
+  "performance": {
+    "totalAssets": 25,
+    "totalSize": 12845678,
+    "optimizedSize": 6422839,
+    "totalSavings": 6422839,
+    "savingsPercentage": 50,
+    "loadTime": {
+      "firstContentfulPaint": 1.2,
+      "largestContentfulPaint": 2.1,
+      "cumulativeLayoutShift": 0.05,
+      "firstInputDelay": 0.1,
+      "timeToInteractive": 2.5
+    },
+    "lighthouse": {
+      "performance": 95,
+      "accessibility": 98,
+      "bestPractices": 92,
+      "seo": 96,
+      "pwa": 85
+    }
+  },
+  "cdn": {
+    "enabled": true,
+    "provider": "cloudflare",
+    "regions": ["asia-southeast1", "asia-east1", "us-central1"],
+    "cache": {
+      "ttl": 86400,
+      "maxAge": 31536000,
+      "etag": true,
+      "compression": true
+    }
+  },
+  "security": {
+    "encryption": true,
+    "integrity": true,
+    "cors": true,
+    "csp": true,
+    "hsts": true,
+    "sri": true
+  },
+  "accessibility": {
+    "altText": true,
+    "ariaLabels": true,
+    "keyboardNavigation": true,
+    "screenReader": true,
+    "contrast": true,
+    "focusManagement": true
+  },
+  "seo": {
+    "structuredData": true,
+    "metaTags": true,
+    "openGraph": true,
+    "twitterCards": true,
+    "sitemap": true,
+    "robots": true
+  },
+  "monitoring": {
+    "analytics": true,
+    "errorTracking": true,
+    "performanceMonitoring": true,
+    "userBehavior": true,
+    "conversionTracking": true
+  }
+}
+
+
+
+

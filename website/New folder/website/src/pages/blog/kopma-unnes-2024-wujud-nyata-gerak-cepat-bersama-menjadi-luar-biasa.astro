@@ -1,0 +1,105 @@
+---
+// Blog page for KOPMA UNNES 2024
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageTitle = "KOPMA UNNES 2024: Wujud Nyata Gerak Cepat Bersama Menjadi Luar Biasa";
+const pageSlug = "kopma-unnes-2024-wujud-nyata-gerak-cepat-bersama-menjadi-luar-biasa";
+---
+
+<BaseLayout title={pageTitle}>
+  <div class="container mx-auto px-4 py-16">
+    <div class="max-w-4xl mx-auto">
+      <!-- Breadcrumb -->
+      <nav class="mb-8 text-sm">
+        <a href="/" class="text-green-600 hover:text-green-700">Beranda</a>
+        <span class="mx-2">/</span>
+        <a href="/blog" class="text-green-600 hover:text-green-700">Blog</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-600">{pageTitle}</span>
+      </nav>
+      
+      <!-- Article Header -->
+      <article class="prose prose-lg max-w-none">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">
+          {pageTitle}
+        </h1>
+        
+        <div class="flex items-center gap-4 text-gray-600 mb-8 pb-8 border-b">
+          <time>2024</time>
+          <span>•</span>
+          <span>KOPMA UNNES</span>
+        </div>
+        
+        <!-- Article Content -->
+        <div class="article-content">
+          <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">KOPMA UNNES 2024: Wujud Nyata Gerak Cepat Bersama Menjadi Luar Biasa</h2>
+            <p class="text-lg text-gray-700 mb-4">
+              Tahun 2024 menjadi tahun yang penuh makna bagi Koperasi Mahasiswa Universitas Negeri Semarang (KOPMA UNNES). 
+              Dengan semangat "Wujud Nyata Gerak Cepat Bersama Menjadi Luar Biasa", KOPMA UNNES terus berkomitmen untuk 
+              memberikan pelayanan terbaik kepada anggota dan masyarakat kampus.
+            </p>
+          </div>
+
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Visi dan Misi 2024</h3>
+          <p class="text-gray-700 mb-4">
+            KOPMA UNNES di tahun 2024 bertekad untuk mewujudkan gerakan koperasi yang lebih solid, inovatif, 
+            dan memberikan dampak nyata bagi kesejahteraan anggota. Melalui berbagai program dan kegiatan yang 
+            telah direncanakan, KOPMA UNNES siap menjadi wadah pengembangan jiwa kewirausahaan dan koperasi 
+            bagi mahasiswa UNNES.
+          </p>
+
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Program Unggulan 2024</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+            <li>Pengembangan Unit Usaha yang lebih modern dan efisien</li>
+            <li>Pelatihan dan workshop kewirausahaan bagi anggota</li>
+            <li>Pendidikan perkoperasian berjenjang</li>
+            <li>Kegiatan sosial dan kemasyarakatan</li>
+            <li>Digitalisasi layanan koperasi</li>
+          </ul>
+
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Gerak Cepat Menuju Perubahan</h3>
+          <p class="text-gray-700 mb-4">
+            Dengan motto "Gerak Cepat", KOPMA UNNES berkomitmen untuk responsif terhadap kebutuhan anggota 
+            dan perubahan zaman. Adaptasi teknologi, peningkatan kualitas pelayanan, dan inovasi berkelanjutan 
+            menjadi fokus utama dalam setiap langkah yang diambil.
+          </p>
+
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Bersama Menjadi Luar Biasa</h3>
+          <p class="text-gray-700 mb-4">
+            KOPMA UNNES percaya bahwa kesuksesan hanya dapat diraih melalui kerja sama dan kebersamaan. 
+            Dengan melibatkan seluruh anggota, pengurus, dan staf, KOPMA UNNES yakin dapat mencapai prestasi 
+            yang luar biasa dan memberikan kontribusi positif bagi lingkungan kampus dan masyarakat.
+          </p>
+
+          <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6 mt-6">
+            <p class="text-sm text-gray-700">
+              <strong>Informasi:</strong> Untuk informasi lebih lanjut tentang program dan kegiatan KOPMA UNNES 2024, 
+              silakan hubungi sekretariat KOPMA UNNES di Gedung Kewirausahaan UNNES atau melalui media sosial resmi kami.
+            </p>
+          </div>
+
+          <div class="mt-8 p-6 bg-gray-50 rounded-lg">
+            <h4 class="font-bold text-gray-900 mb-2">Kontak KOPMA UNNES:</h4>
+            <ul class="space-y-2 text-gray-700">
+              <li>📍 Gedung Kewirausahaan UNNES, Sekaran, Gunungpati, Semarang</li>
+              <li>📧 Email: kopmaunnes@gmail.com</li>
+              <li>📱 Instagram: @kopmaunnes</li>
+              <li>🌐 Website: www.kopmaukmunnes.com</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      
+      <!-- Back to Blog -->
+      <div class="mt-12 pt-8 border-t">
+        <a href="/blog" class="inline-flex items-center text-green-600 hover:text-green-700">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          </svg>
+          Kembali ke Blog
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

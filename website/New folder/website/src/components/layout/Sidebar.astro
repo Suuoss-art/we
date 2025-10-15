@@ -1,0 +1,244 @@
+---
+// src/components/layout/Sidebar.astro
+// Sidebar component for KOPMA UNNES Website
+
+interface Props {
+  isOpen?: boolean;
+  variant?: 'default' | 'compact' | 'expanded';
+  position?: 'left' | 'right';
+  sticky?: boolean;
+  className?: string;
+}
+
+const {
+  isOpen = true,
+  variant = 'default',
+  position = 'left',
+  sticky = true,
+  className = ''
+} = Astro.props;
+
+const sidebarClasses = `
+  ${position === 'left' ? 'left-0' : 'right-0'}
+  ${sticky ? 'sticky top-0' : ''}
+  ${variant === 'compact' ? 'w-16' : variant === 'expanded' ? 'w-80' : 'w-64'}
+  h-screen bg-white border-r border-gray-200 shadow-sm
+  transition-all duration-300 ease-in-out
+  ${isOpen ? 'translate-x-0' : position === 'left' ? '-translate-x-full' : 'translate-x-full'}
+  ${className}
+`;
+
+const menuItems = [
+  {
+    title: 'Beranda',
+    href: '/',
+    icon: 'home',
+    active: true
+  },
+  {
+    title: 'Tentang Kami',
+    href: '/about',
+    icon: 'info',
+    active: false
+  },
+  {
+    title: 'Struktur Organisasi',
+    href: '/struktur',
+    icon: 'users',
+    active: false
+  },
+  {
+    title: 'Layanan',
+    href: '/layanan',
+    icon: 'services',
+    active: false
+  },
+  {
+    title: 'Kontak',
+    href: '/kontak',
+    icon: 'contact',
+    active: false
+  }
+];
+
+const socialLinks = [
+  {
+    name: 'Facebook',
+    href: '#',
+    icon: 'facebook'
+  },
+  {
+    name: 'Instagram',
+    href: '#',
+    icon: 'instagram'
+  },
+  {
+    name: 'Twitter',
+    href: '#',
+    icon: 'twitter'
+  },
+  {
+    name: 'LinkedIn',
+    href: '#',
+    icon: 'linkedin'
+  }
+];
+---
+
+<aside class={sidebarClasses}>
+  <div class="flex flex-col h-full">
+    <!-- Logo -->
+    <div class="flex items-center justify-center h-16 px-4 border-b border-gray-200">
+      <a href="/" class="flex items-center space-x-2">
+        <img 
+          src="/assets/images/logo.png" 
+          alt="KOPMA UNNES Logo" 
+          class="w-8 h-8"
+        />
+        {variant !== 'compact' && (
+          <span class="text-xl font-bold text-primary-600">
+            KOPMA UNNES
+          </span>
+        )}
+      </a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="flex-1 px-4 py-6 space-y-2">
+      {menuItems.map((item) => (
+        <a
+          href={item.href}
+          class={`
+            flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors duration-200
+            ${item.active 
+              ? 'bg-primary-100 text-primary-700 border-r-2 border-primary-600' 
+              : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+            }
+            ${variant === 'compact' ? 'justify-center' : ''}
+          `}
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {item.icon === 'home' && (
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            )}
+            {item.icon === 'info' && (
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            )}
+            {item.icon === 'users' && (
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+            )}
+            {item.icon === 'services' && (
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            )}
+            {item.icon === 'contact' && (
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            )}
+          </svg>
+          {variant !== 'compact' && (
+            <span class="ml-3">{item.title}</span>
+          )}
+        </a>
+      ))}
+    </nav>
+
+    <!-- Contact Info -->
+    {variant !== 'compact' && (
+      <div class="px-4 py-6 border-t border-gray-200">
+        <div class="space-y-3">
+          <div class="flex items-center space-x-3">
+            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span class="text-sm text-gray-600">
+              Jl. Sekaran, Gunungpati, Semarang
+            </span>
+          </div>
+          
+          <div class="flex items-center space-x-3">
+            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <span class="text-sm text-gray-600">
+              (024) 8508081
+            </span>
+          </div>
+          
+          <div class="flex items-center space-x-3">
+            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <span class="text-sm text-gray-600">
+              info@kopmaunnes.ac.id
+            </span>
+          </div>
+        </div>
+      </div>
+    )}
+
+    <!-- Social Links -->
+    {variant !== 'compact' && (
+      <div class="px-4 py-6 border-t border-gray-200">
+        <div class="flex space-x-4">
+          {socialLinks.map((link) => (
+            <a
+              href={link.href}
+              class="text-gray-400 hover:text-primary-600 transition-colors duration-200"
+              aria-label={link.name}
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                {link.icon === 'facebook' && (
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                )}
+                {link.icon === 'instagram' && (
+                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.281c-.49 0-.98-.49-.98-.98s.49-.98.98-.98.98.49.98.98-.49.98-.98.98z"/>
+                )}
+                {link.icon === 'twitter' && (
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                )}
+                {link.icon === 'linkedin' && (
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                )}
+              </svg>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</aside>
+
+<style>
+  .sidebar-transition {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar-mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      z-index: 50;
+      transform: translateX(-100%);
+    }
+    
+    .sidebar-mobile.open {
+      transform: translateX(0);
+    }
+  }
+</style>
+
+
+
+

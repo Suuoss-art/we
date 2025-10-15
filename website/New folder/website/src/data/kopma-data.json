@@ -1,0 +1,483 @@
+{
+  "hero": {
+    "title": "KOPERASI MAHASISWA UNNES",
+    "subtitle": "Kami Ada Karena Anda",
+    "description": "Berdiri sejak 7 Mei 1982, menjadi wadah untuk mendidik anggota agar tumbuh menjadi insan koperasi yang militan (Wira Koperasi).",
+    "cta": {
+      "primary": "Daftar Sekarang!",
+      "secondary": "Lihat Unit Usaha"
+    },
+    "background": "linear-gradient(135deg, #35513b 0%, #6b9c78 100%)",
+    "mascot": "/assets/images/bee-mascot.png"
+  },
+  "about": {
+    "title": "Let's Talk Our KOPMA",
+    "description": "Koperasi Mahasiswa Unnes lahir berawal dari perlunya pemenuhan kebutuhan kesejahteraan mahasiswa melalui unit usaha yang dikelola oleh mahasiswa sendiri. Keinginan tersebut semakin berkembang setelah munculnya gagasan perlunya wadah untuk mendidik anggota agar tumbuh menjadi insan koperasi yang militan (Wira Koperasi). Kopma Unnes berdiri pada tanggal 7 Mei 1982.",
+    "visi": "Menjadikan KOPMA UNNES sebagai wadah dan organisasi bisnis bagi anggota dengan pengembangan SQIPTEKS yang berasas kekeluargaan",
+    "misi": [
+      "Mengembangkan unit usaha dengan menekankan konsep ekonomi kreatif dalam rangka peningkatan omzet guna meningkatkan kesejahteraan anggota.",
+      "Mempererat kekeluargaan dengan komunikasi secara intens antar sesama pengurus dan anggota.",
+      "Meningkatkan hubungan internal maupun eksternal dalam hal kerja sama diberbagai bidang sebagai wujud diversifikasi usaha.",
+      "Aktif dalam berbagai kegiatan perkoperasian baik lingkup universitas maupun luar universitas guna menunjang peran Kopma sebagai laboratorium koperasi bagi mahasiswa."
+    ],
+    "badan_hukum": "No.10/180.08/PAD/XIV/VII/2010",
+    "features": [
+      {
+        "icon": "🔄",
+        "title": "Agen Pembaharuan",
+        "description": "Bahwa sebagai suatu kesatuan yang integral, KOPMA UNNES beserta seluruh anggota merupakan agent pembaharu dan pelopor pembangunan. Kemurnian sikap dan gagasannya tercermin dalam setiap kegiatan dan aktifitasnya.",
+        "image": "/assets/images/undraw_convert_re_l0y1.png"
+      },
+      {
+        "icon": "🏆",
+        "title": "Kader Koperasi",
+        "description": "KOPMA UNNES beserta seluruh anggota merupakan kader koperasi yang berkualitas, memiliki wawasan perkoperasian yang luas dan siap mengembangkan gerakan koperasi Indonesia.",
+        "image": "/assets/images/undraw_process_re_gws7.png"
+      },
+      {
+        "icon": "🌍",
+        "title": "Kader Bangsa",
+        "description": "KOPMA UNNES beserta seluruh anggota merupakan kader bangsa yang siap berkontribusi dalam pembangunan nasional dengan jiwa koperasi yang kuat.",
+        "image": "/assets/images/undraw_around_the_world_re_rb1p.png"
+      }
+    ],
+    "stats": [
+      {
+        "number": "438",
+        "label": "Anggota"
+      },
+      {
+        "number": "23",
+        "label": "Pengurus"
+      },
+      {
+        "number": "19",
+        "label": "Staf"
+      },
+      {
+        "number": "5",
+        "label": "Unit Usaha"
+      }
+    ]
+  },
+  "structure": {
+    "title": "Pengurus & Pengawas KOPMA UNNES Tahun 2023",
+    "subtitle": "Let's To Introduce Our",
+    "description": "Struktur organisasi KOPMA UNNES yang solid dengan pembagian tugas yang jelas untuk memberikan pelayanan terbaik bagi seluruh anggota.",
+    "leadership": [
+      {
+        "name": "Hafidz Muhammad Dzidan Walid",
+        "position": "Direktur Utama",
+        "image": "/assets/images/IMG_9424-scaled-e1686805897716-300x292.jpg",
+        "description": "Memimpin KOPMA UNNES dengan visi yang jelas untuk kemajuan koperasi mahasiswa."
+      }
+    ],
+    "departments": [
+      {
+        "name": "Administrasi Umum",
+        "members": [
+          {
+            "name": "Audy Anastasya",
+            "position": "Administrasi Umum",
+            "image": "/assets/images/IMG_9477-scaled-e1686806804452-300x257.jpg"
+          },
+          {
+            "name": "Dhita Indah Sari",
+            "position": "Administrasi Organisasi",
+            "image": "/assets/images/IMG_9460-scaled-e1700237845357.jpg"
+          },
+          {
+            "name": "Zahra Aurania Jauhari",
+            "position": "Inventaris",
+            "image": "/assets/images/IMG_9483-scaled-e1700237955585.jpg"
+          }
+        ],
+        "description": "Mengelola administrasi umum, organisasi, dan inventaris koperasi."
+      },
+      {
+        "name": "Keuangan",
+        "head": {
+          "name": "Artvanya Zahra Khalisa Adjani",
+          "position": "Bendahara Umum",
+          "image": "/assets/images/IMG_9467-scaled-e1700238186326.jpg"
+        },
+        "members": [
+          {
+            "name": "Sulistyowati",
+            "position": "Keuangan Organisasi",
+            "image": "/assets/images/IMG_9487-scaled-e1700238280205.jpg"
+          },
+          {
+            "name": "Nurul Aini Lessy",
+            "position": "Keuangan Usaha",
+            "image": "/assets/images/IMG_9485-scaled-e1700238523508.jpg"
+          },
+          {
+            "name": "Ulfa Syaroh Nurhayati",
+            "position": "Keuangan Organisasi",
+            "image": "/assets/images/IMG_9489-scaled-e1700238392538.jpg"
+          }
+        ],
+        "description": "Mengelola keuangan koperasi, pembukuan, dan laporan keuangan dengan akurat dan transparan."
+      },
+      {
+        "name": "PSDA",
+        "head": {
+          "name": "M Riski Amin Muminin",
+          "position": "Kepala Bidang PSDA",
+          "image": "/assets/images/IMG_9445-scaled-e1700238595880.jpg"
+        },
+        "members": [
+          {
+            "name": "Arya Editama",
+            "position": "Pendidikan",
+            "image": "/assets/images/IMG_9442-scaled-e1700238687876.jpg"
+          },
+          {
+            "name": "Khanafi Fathu Razaaq",
+            "position": "Pengkaderan",
+            "image": "/assets/images/IMG_9440-scaled-e1700238821116.jpg"
+          },
+          {
+            "name": "Gita Arvana",
+            "position": "Pelatihan",
+            "image": "/assets/images/IMG_9491-scaled-e1700238962541.jpg"
+          },
+          {
+            "name": "Fairuz Nabila Angelie Ardana",
+            "position": "Keanggotaan",
+            "image": "/assets/images/IMG_9481-scaled-e1700239124230-1536x1491.jpg"
+          }
+        ],
+        "description": "Mengelola pengembangan sumber daya anggota melalui pendidikan, pengkaderan, pelatihan, dan keanggotaan."
+      },
+      {
+        "name": "Usaha",
+        "head": {
+          "name": "Rizal Aditya Syahputra",
+          "position": "Kepala Bidang Usaha",
+          "image": "/assets/images/IMG_9431-scaled-e1700239235750.jpg"
+        },
+        "members": [
+          {
+            "name": "Nurrahman Firdaus",
+            "position": "KOPMART",
+            "image": "/assets/images/IMG_9433-scaled-e1700239300528.jpg"
+          },
+          {
+            "name": "Amna Kuffa Falastin",
+            "position": "KOPMART",
+            "image": "/assets/images/IMG_9494-scaled-e1700239553307.jpg"
+          },
+          {
+            "name": "Widya Hidayati",
+            "position": "Toga",
+            "image": "/assets/images/IMG_9457-scaled-e1700239803456.jpg"
+          },
+          {
+            "name": "Rendyka Ardiansyach",
+            "position": "JNE",
+            "image": "/assets/images/IMG_9447-scaled-e1700239404565.jpg"
+          },
+          {
+            "name": "Aprilia Wahyu Rustiningsih",
+            "position": "Marketing",
+            "image": "/assets/images/IMG_9449-scaled-e1700239721732.jpg"
+          }
+        ],
+        "description": "Mengelola unit usaha KOPMA termasuk KOPMART, Toga Wisuda, JNE, dan strategi pemasaran."
+      },
+      {
+        "name": "Media dan Humas",
+        "head": {
+          "name": "Nabila Amara Sani",
+          "position": "Kepala Bidang MEDHUM",
+          "image": "/assets/images/IMG_9469-scaled-e1700239988914.jpg"
+        },
+        "members": [
+          {
+            "name": "Gina Rahmatika",
+            "position": "Humas",
+            "image": "/assets/images/IMG_9465-scaled-e1700240054642.jpg"
+          },
+          {
+            "name": "U'un Amrul Jannah",
+            "position": "Sosial",
+            "image": "/assets/images/IMG_9474-scaled-e1700240215427.jpg"
+          },
+          {
+            "name": "Salma Aprilia Huda Putri",
+            "position": "Media",
+            "image": "/assets/images/IMG_9435-scaled-e1700240139924.jpg"
+          }
+        ],
+        "description": "Mengelola hubungan masyarakat, media sosial, dan kegiatan sosial kemasyarakatan."
+      },
+      {
+        "name": "Pengawas",
+        "head": {
+          "name": "Shelley Rifda Windani",
+          "position": "Ketua Pengawas",
+          "image": "/assets/images/IMG_9437-scaled-e1700240278443.jpg"
+        },
+        "members": [
+          {
+            "name": "Dinda Putri Amelia",
+            "position": "Anggota Pengawas",
+            "image": "/assets/images/IMG_9495-scaled-e1700240328371.jpg"
+          },
+          {
+            "name": "Finka Riski Maulida",
+            "position": "Anggota Pengawas",
+            "image": "/assets/images/IMG_9452-scaled-e1700240393201.jpg"
+          }
+        ],
+        "description": "Melakukan pengawasan terhadap jalannya organisasi dan memastikan koperasi berjalan sesuai dengan aturan yang berlaku."
+      }
+    ]
+  },
+  "unit_usaha": {
+    "title": "Unit Usaha",
+    "description": "Berbagai layanan dan produk yang kami tawarkan untuk memenuhi kebutuhan mahasiswa UNNES",
+    "units": [
+      {
+        "name": "Counter JNE",
+        "description": "Menyediakan jasa pelayanan antar paket",
+        "image": "/assets/images/jne-logo.png",
+        "location": "https://goo.gl/maps/55sJiRhHhRYau4Ph7"
+      },
+      {
+        "name": "KOPMART",
+        "description": "Menyediakan beraneka ragam kebutuhan sehari-hari",
+        "image": "/assets/images/kopmart-logo.png",
+        "location": "https://goo.gl/maps/brfNFREQze2J8wANA"
+      },
+      {
+        "name": "Toga Wisuda",
+        "description": "Menyediakan persewaan & pembelian toga wisuda",
+        "image": "/assets/images/toga-logo.png",
+        "location": "https://goo.gl/maps/5TVGkN2AEYUm9Hxu5"
+      },
+      {
+        "name": "Konsinyasi",
+        "description": "Menyediakan penitipan barang yang dititipkan oleh anggota untuk diperjual-belikan (jual-titip)",
+        "image": "/assets/images/konsinyasi.jpg",
+        "location": "https://goo.gl/maps/brfNFREQze2J8wANA"
+      },
+      {
+        "name": "Mie Sarjana",
+        "description": "Usaha Baru - Kuliner",
+        "image": "/assets/images/mie-sarjana-logo.png",
+        "location": "https://maps.app.goo.gl/eLL5wZfwTdeJu5Eq5"
+      }
+    ]
+  },
+  "contact": {
+    "title": "OUR LOCATION",
+    "description": "Kami siap membantu dan melayani Anda. Hubungi kami melalui berbagai saluran komunikasi yang tersedia.",
+    "address": {
+      "street": "Gedung Kewirausahaan UNNES",
+      "city": "Sekaran, Gunungpati",
+      "postalCode": "50229",
+      "country": "Semarang, Jawa Tengah"
+    },
+    "phone": [
+      "+6281227473357"
+    ],
+    "email": [
+      "kopmaunnes@gmail.com"
+    ],
+    "socialMedia": [
+      {
+        "platform": "Instagram",
+        "url": "http://instagram.com/kopmaunnes",
+        "icon": "📷"
+      },
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/kopma.unnes.90",
+        "icon": "📘"
+      },
+      {
+        "platform": "WhatsApp",
+        "url": "http://wa.me/+6281227473357",
+        "icon": "💬"
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/channel/UCjuQc9sYsiox58hN3XFn3iQ",
+        "icon": "📺"
+      }
+    ],
+    "hours": {
+      "weekdays": "Senin - Jumat: 08.00 - 16.00",
+      "weekend": "Sabtu: 08.00 - 12.00"
+    }
+  },
+  "pages_info": {
+    "total_crawled_pages": 67,
+    "crawl_date": "2025-10-11T07:23:34.949858",
+    "pages": [
+      {
+        "slug": "index",
+        "title": "KOPMA UNNES – Kami Ada Karena Anda",
+        "url": "https://kopmaukmunnes.com/",
+        "has_content": true,
+        "markdown_length": 24172,
+        "filename": "kopmaukmunnes.com_.json"
+      },
+      {
+        "slug": "ada-yang-baru-nih-jangan-sampe-ketinggalan-kopmart-kopma-unnes_",
+        "title": "Ada Yang Baru Nih. Jangan Sampe Ketinggalan! #KOPMART KOPMA UNNES – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/ada-yang-baru-nih-jangan-sampe-ketinggalan-kopmart-kopma-unnes/",
+        "has_content": true,
+        "markdown_length": 4431,
+        "filename": "kopmaukmunnes.com_ada-yang-baru-nih-jangan-sampe-ketinggalan-kopmart-kopma-unnes_.json"
+      },
+      {
+        "slug": "awal-berbeda-akhir-bersama_",
+        "title": "AWAL BERBEDA AKHIR BERSAMA – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/awal-berbeda-akhir-bersama/",
+        "has_content": true,
+        "markdown_length": 5684,
+        "filename": "kopmaukmunnes.com_awal-berbeda-akhir-bersama_.json"
+      },
+      {
+        "slug": "badminton-menjadi-perekat-silaturahmi-antar-anggota-kopma-unnes-membergathering_",
+        "title": "BADMINTON MENJADI PEREKAT SILATURAHMI ANTAR ANGGOTA KOPMA UNNES #MemberGathering – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/badminton-menjadi-perekat-silaturahmi-antar-anggota-kopma-unnes-membergathering/",
+        "has_content": true,
+        "markdown_length": 4519,
+        "filename": "kopmaukmunnes.com_badminton-menjadi-perekat-silaturahmi-antar-anggota-kopma-unnes-membergathering_.json"
+      },
+      {
+        "slug": "belajar-keterampilan-design-itu-mudah_",
+        "title": "BELAJAR KETERAMPILAN DESIGN ITU MUDAH LOH! – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/belajar-keterampilan-design-itu-mudah/",
+        "has_content": true,
+        "markdown_length": 4322,
+        "filename": "kopmaukmunnes.com_belajar-keterampilan-design-itu-mudah_.json"
+      },
+      {
+        "slug": "berbagi-cinta-dan-harapan-peran-donasi-dalam-mendukung-panti-asuhan-dan-masa-depan-anak-anak-kopma-unnes-berbagi_",
+        "title": "Berbagi Cinta dan Harapan: Peran Donasi dalam Mendukung Panti Asuhan dan Masa Depan Anak-Anak # KOPMA UNNES BERBAGI – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/berbagi-cinta-dan-harapan-peran-donasi-dalam-mendukung-panti-asuhan-dan-masa-depan-anak-anak-kopma-unnes-berbagi/",
+        "has_content": true,
+        "markdown_length": 4765,
+        "filename": "kopmaukmunnes.com_berbagi-cinta-dan-harapan-peran-donasi-dalam-mendukung-panti-asuhan-dan-masa-depan-anak-anak-kopma-unnes-berbagi_.json"
+      },
+      {
+        "slug": "berbagi-keberkahan-dibulan-ramadhan-2-kopma-charity_",
+        "title": "Berbagi Keberkahan dibulan Ramadhan 2 # KOPMA CHARITY – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/berbagi-keberkahan-dibulan-ramadhan-2-kopma-charity/",
+        "has_content": true,
+        "markdown_length": 4279,
+        "filename": "kopmaukmunnes.com_berbagi-keberkahan-dibulan-ramadhan-2-kopma-charity_.json"
+      },
+      {
+        "slug": "berbagi-keberkahan-dibulan-ramadhan-berbagi-takjil-bersama-kopma-unnes_",
+        "title": "Berbagi Keberkahan Dibulan Ramadhan 1#Berbagi Takjil Bersama Kopma UNNES – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/berbagi-keberkahan-dibulan-ramadhan-berbagi-takjil-bersama-kopma-unnes/",
+        "has_content": true,
+        "markdown_length": 3962,
+        "filename": "kopmaukmunnes.com_berbagi-keberkahan-dibulan-ramadhan-berbagi-takjil-bersama-kopma-unnes_.json"
+      },
+      {
+        "slug": "berkah-bersedekah-kopma-unnes-galang-infak-untuk-renovasi-masjid-al-fatah-di-semarang_",
+        "title": "Berkah Bersedekah: KOPMA UNNES Galang Infak untuk Renovasi Masjid Al-Fatah di Semarang – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/berkah-bersedekah-kopma-unnes-galang-infak-untuk-renovasi-masjid-al-fatah-di-semarang/",
+        "has_content": true,
+        "markdown_length": 5394,
+        "filename": "kopmaukmunnes.com_berkah-bersedekah-kopma-unnes-galang-infak-untuk-renovasi-masjid-al-fatah-di-semarang_.json"
+      },
+      {
+        "slug": "blog_",
+        "title": "ACARA – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/blog/",
+        "has_content": true,
+        "markdown_length": 13066,
+        "filename": "kopmaukmunnes.com_blog_.json"
+      },
+      {
+        "slug": "built-our-friendship-a-night-of-fun-and-togetherness_",
+        "title": "Built Our Friendship: A Night of Fun and Togetherness. – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/built-our-friendship-a-night-of-fun-and-togetherness/",
+        "has_content": true,
+        "markdown_length": 6663,
+        "filename": "kopmaukmunnes.com_built-our-friendship-a-night-of-fun-and-togetherness_.json"
+      },
+      {
+        "slug": "dari-perbedaan-wujudkan-keakraban_",
+        "title": "Dari Perbedaan Wujudkan Keakraban – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/dari-perbedaan-wujudkan-keakraban/",
+        "has_content": true,
+        "markdown_length": 5485,
+        "filename": "kopmaukmunnes.com_dari-perbedaan-wujudkan-keakraban_.json"
+      },
+      {
+        "slug": "elementor-1642_",
+        "title": "KOPMART – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/elementor-1642/",
+        "has_content": true,
+        "markdown_length": 3294,
+        "filename": "kopmaukmunnes.com_elementor-1642_.json"
+      },
+      {
+        "slug": "elementor-1661_",
+        "title": "toga – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/elementor-1661/",
+        "has_content": true,
+        "markdown_length": 6522,
+        "filename": "kopmaukmunnes.com_elementor-1661_.json"
+      },
+      {
+        "slug": "enhancing-entrepreneurial-spirit_",
+        "title": "Enhancing Entrepreneurial Spirit – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/enhancing-entrepreneurial-spirit/",
+        "has_content": true,
+        "markdown_length": 4184,
+        "filename": "kopmaukmunnes.com_enhancing-entrepreneurial-spirit_.json"
+      },
+      {
+        "slug": "first-meeting-anggota-kopma-unnes_",
+        "title": "First Meeting Anggota KOPMA UNNES – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/first-meeting-anggota-kopma-unnes/",
+        "has_content": true,
+        "markdown_length": 4541,
+        "filename": "kopmaukmunnes.com_first-meeting-anggota-kopma-unnes_.json"
+      },
+      {
+        "slug": "gak-mahir-excel-kalem-kopma-unnes-ada-pelatihan-excel-loh_",
+        "title": "Gak Mahir Excel? Kalem, KOPMA UNNES ada Pelatihan Excel loh! – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/gak-mahir-excel-kalem-kopma-unnes-ada-pelatihan-excel-loh/",
+        "has_content": true,
+        "markdown_length": 4396,
+        "filename": "kopmaukmunnes.com_gak-mahir-excel-kalem-kopma-unnes-ada-pelatihan-excel-loh_.json"
+      },
+      {
+        "slug": "harkopnas_",
+        "title": "Sukses di Era Digital: KOPMA UNNES Gelar Webinar Menarik dalam Peringatan HARKOPNAS ke-76 – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/harkopnas/",
+        "has_content": true,
+        "markdown_length": 5403,
+        "filename": "kopmaukmunnes.com_harkopnas_.json"
+      },
+      {
+        "slug": "inventaris_",
+        "title": "INVENTARIS – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/inventaris/",
+        "has_content": true,
+        "markdown_length": 3899,
+        "filename": "kopmaukmunnes.com_inventaris_.json"
+      },
+      {
+        "slug": "jadwal-toga_",
+        "title": "QnA Toga – KOPMA UNNES",
+        "url": "https://kopmaukmunnes.com/jadwal-toga/",
+        "has_content": true,
+        "markdown_length": 1830,
+        "filename": "kopmaukmunnes.com_jadwal-toga_.json"
+      }
+    ]
+  }
+}

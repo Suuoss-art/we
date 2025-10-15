@@ -1,0 +1,64 @@
+---
+// Auto-generated blog page from crawl data
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageTitle = "ACARA";
+const pageSlug = "blog_";
+---
+
+<BaseLayout title={pageTitle}>
+  <div class="container mx-auto px-4 py-16">
+    <div class="max-w-4xl mx-auto">
+      <!-- Breadcrumb -->
+      <nav class="mb-8 text-sm">
+        <a href="/" class="text-green-600 hover:text-green-700">Beranda</a>
+        <span class="mx-2">/</span>
+        <a href="/blog" class="text-green-600 hover:text-green-700">Blog</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-600">{pageTitle}</span>
+      </nav>
+      
+      <!-- Article Header -->
+      <article class="prose prose-lg max-w-none">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">
+          {pageTitle}
+        </h1>
+        
+        <div class="flex items-center gap-4 text-gray-600 mb-8 pb-8 border-b">
+          <time>2024</time>
+          <span>•</span>
+          <span>KOPMA UNNES</span>
+        </div>
+        
+        <!-- Article Content -->
+        <div class="article-content">
+          <p class="lead text-xl text-gray-700 mb-6">
+            [Lewati ke konten](https://kopmaukmunnes.com/blog/#content "Lewati ke konten")
+
+[![KOPMA UNNES](https://kopmaukmunnes.com/wp-content/uploads/2021/07/cropped-kopma-unnes.png)](https://kopmaukmunnes.com/)
+
+- [BERANDA](https://kopmaukmunnes.com/)
+- [TENTANG KAMI](https://kopmaukmunnes.com/tentang-kami/...
+          </p>
+          
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+            <p class="text-sm text-gray-700">
+              <strong>Catatan:</strong> Konten lengkap artikel ini sedang dalam proses migrasi dari website lama.
+              Untuk informasi lebih lanjut, silakan hubungi KOPMA UNNES.
+            </p>
+          </div>
+        </div>
+      </article>
+      
+      <!-- Back to Blog -->
+      <div class="mt-12 pt-8 border-t">
+        <a href="/blog" class="inline-flex items-center text-green-600 hover:text-green-700">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          </svg>
+          Kembali ke Blog
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,172 @@
+---
+// src/pages/struktur.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import organizationalStructure from '../data/organizational-structure.json';
+
+export const prerender = true;
+---
+
+<BaseLayout title="Struktur Organisasi KOPMA UNNES 2023">
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container mx-auto px-4 py-16">
+        <h1 class="text-4xl md:text-6xl font-bold text-center mb-4">
+          {organizationalStructure.title}
+        </h1>
+        <p class="text-2xl text-center mb-8 subtitle">
+          {organizationalStructure.subtitle}
+        </p>
+        <p class="text-xl text-center max-w-3xl mx-auto description">
+          {organizationalStructure.description}
+        </p>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-kopma_green-500">
+          DIREKTUR UTAMA
+        </h2>
+        <div class="max-w-md mx-auto">
+          {organizationalStructure.leadership.map((leader) => (
+            <div class="bg-white rounded-lg shadow-xl p-8 text-center hover:shadow-2xl transition-shadow duration-300">
+              <div class="mb-6">
+                <img
+                  src={leader.image}
+                  alt={leader.name}
+                  class="w-48 h-48 rounded-full mx-auto object-cover border-4 border-kopma_yellow-500 shadow-lg"
+                />
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                {leader.name}
+              </h3>
+              <p class="text-lg text-kopma_yellow-600 font-semibold mb-3">
+                {leader.position}
+              </p>
+              <p class="text-gray-600">
+                {leader.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        {organizationalStructure.departments.map((dept) => (
+          <div class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-kopma_green-500">
+              {dept.name.toUpperCase()}
+            </h2>
+            
+            {/* Department Head */}
+            {dept.head && (
+              <div class="max-w-md mx-auto mb-8">
+                <div class="bg-gradient-to-br from-kopma_green-50 to-kopma_yellow-50 rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+                  <div class="mb-4">
+                    <img
+                      src={dept.head.image}
+                      alt={dept.head.name}
+                      class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-kopma_yellow-500 shadow-md"
+                    />
+                  </div>
+                  <h3 class="text-xl font-bold text-gray-900 mb-2">
+                    {dept.head.name}
+                  </h3>
+                  <p class="text-lg text-kopma_yellow-600 font-semibold">
+                    {dept.head.position}
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* Department Members */}
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-8">
+              {dept.members.map((member) => (
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+                  <div class="mb-4">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      class="w-24 h-24 rounded-full mx-auto object-cover border-3 border-kopma_green-300 shadow-md"
+                    />
+                  </div>
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">
+                    {member.name}
+                  </h3>
+                  <p class="text-md text-kopma_green-600 font-medium">
+                    {member.position}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Department Description */}
+            <div class="max-w-4xl mx-auto">
+              <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <p class="text-gray-700 italic">
+                  {dept.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-kopma_green-500 to-kopma_green-600">
+      <div class="container mx-auto px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+            Bergabung dengan Tim Kami
+          </h2>
+          <p class="text-xl text-white/90 mb-8">
+            KOPMA UNNES selalu membuka kesempatan bagi mahasiswa yang ingin berkontribusi 
+            dalam pengembangan koperasi dan pelayanan kepada anggota.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/keanggotaan"
+              class="px-8 py-4 bg-kopma_yellow-500 text-kopma_green-900 font-bold rounded-lg hover:bg-kopma_yellow-400 transition-colors duration-200 shadow-lg hover:shadow-xl"
+            >
+              Daftar Sekarang
+            </a>
+            <a
+              href="/tentang"
+              class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-kopma_green-600 transition-colors duration-200"
+            >
+              Pelajari Lebih Lanjut
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .hero-section {
+    background: linear-gradient(135deg, #35513b 0%, #6b9c78 100%);
+    color: white;
+  }
+  
+  .hero-section h1,
+  .hero-section .subtitle,
+  .hero-section .description {
+    color: white;
+  }
+
+  .hero-section .subtitle {
+    color: rgba(237, 180, 33, 1);
+    font-weight: 600;
+  }
+  
+  .hero-section .description {
+    color: rgba(255, 255, 255, 0.95);
+  }
+</style>

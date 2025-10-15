@@ -1,0 +1,91 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EnhancedHero from '../components/sections/EnhancedHero';
+import AboutSection from '../components/sections/AboutSection';
+import UnitUsahaSection from '../components/sections/UnitUsahaSection';
+import NewsSection from '../components/sections/NewsSection';
+import GallerySection from '../components/sections/GallerySection';
+import ContactSection from '../components/sections/ContactSection';
+import SmoothScroll from '../components/animations/SmoothScroll';
+// CustomCursor removed for better UX
+import kopmaData from '../data/kopma-data.json';
+
+export const prerender = true;
+---
+
+<BaseLayout title="KOPMA UNNES - Kami Ada Karena Anda">
+  <SmoothScroll client:load>
+      <main>
+      <EnhancedHero 
+        client:load
+        title={kopmaData.hero.title}
+        subtitle={kopmaData.hero.subtitle}
+        description={kopmaData.hero.description}
+        ctaText={kopmaData.hero.cta.primary}
+        ctaLink="https://berbagi.link/OPRECANGGOTA22"
+        secondaryCtaText={kopmaData.hero.cta.secondary}
+        secondaryCtaLink="#unit-usaha"
+        stats={kopmaData.about.stats}
+        enable3D={true}
+      />
+    
+    <AboutSection 
+      client:visible
+      title={kopmaData.about.title}
+      subtitle="Sejak 7 Mei 1982"
+      description={kopmaData.about.description}
+      features={kopmaData.about.features}
+      stats={[]}
+      ctaText="Pelajari Lebih Lanjut"
+      ctaLink="/about"
+    />
+    
+    <div id="unit-usaha">
+      <UnitUsahaSection
+        client:visible
+        title={kopmaData.unit_usaha.title}
+        description={kopmaData.unit_usaha.description}
+        units={kopmaData.unit_usaha.units}
+      />
+    </div>
+    
+    <GallerySection
+      client:visible
+      title="Let's See Our Activities"
+      subtitle="Dokumentasi kegiatan dan momen berharga KOPMA UNNES"
+    />
+    
+    <NewsSection
+      client:visible
+      title="News & Events"
+      subtitle="Berita terkini dan kegiatan KOPMA UNNES"
+    />
+    
+    <ContactSection 
+      client:visible
+      title={kopmaData.contact.title}
+      subtitle="Hubungi Kami"
+      description={kopmaData.contact.description}
+      contactInfo={{
+        address: `${kopmaData.contact.address.street}, ${kopmaData.contact.address.city}, ${kopmaData.contact.address.country} ${kopmaData.contact.address.postalCode}`,
+        phone: kopmaData.contact.phone.join(', '),
+        email: kopmaData.contact.email.join(', '),
+        website: 'www.kopmaukmunnes.com'
+      }}
+      socialMedia={{
+        facebook: kopmaData.contact.socialMedia.find((s: any) => s.platform === 'Facebook')?.url,
+        instagram: kopmaData.contact.socialMedia.find((s: any) => s.platform === 'Instagram')?.url,
+        whatsapp: kopmaData.contact.socialMedia.find((s: any) => s.platform === 'WhatsApp')?.url,
+        youtube: kopmaData.contact.socialMedia.find((s: any) => s.platform === 'YouTube')?.url
+      }}
+    />
+      </main>
+    </SmoothScroll>
+</BaseLayout>
+
+<style>
+  main {
+    min-height: 100vh;
+  }
+</style>

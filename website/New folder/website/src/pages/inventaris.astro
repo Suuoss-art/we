@@ -1,0 +1,285 @@
+---
+// Inventaris Page - KOPMA UNNES
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = "Inventaris - KOPMA UNNES";
+const pageDescription = "Daftar inventaris dan aset KOPMA UNNES";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <div class="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-gradient-to-br from-primary-900 to-primary-700 text-white overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <svg class="w-full h-full">
+          <pattern id="dots-inventaris" width="20" height="20" patternUnits="userSpaceOnUse">
+            <circle cx="10" cy="10" r="1" fill="#fff" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#dots-inventaris)" />
+        </svg>
+      </div>
+
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="inline-flex items-center justify-center w-20 h-20 bg-kopma_yellow-500/20 rounded-full mb-6">
+            <span class="text-5xl">📦</span>
+          </div>
+          <h1 class="text-5xl md:text-6xl font-bold mb-6">Inventaris KOPMA UNNES</h1>
+          <p class="text-xl text-gray-200">
+            Transparansi dan akuntabilitas pengelolaan aset koperasi mahasiswa
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kategori Inventaris -->
+    <section class="py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl font-bold text-primary-900 mb-12 text-center">Kategori Inventaris</h2>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Unit Usaha -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                <span class="text-3xl">🏪</span>
+              </div>
+              <h3 class="text-2xl font-bold text-primary-900 mb-3">Unit Usaha</h3>
+              <p class="text-gray-600 mb-4">Aset dan peralatan untuk unit usaha KOPMA</p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> KOPMART (Toko)
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Fotocopy & Print
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Rental Mobil
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Mie Sarjana
+                </li>
+              </ul>
+            </div>
+
+            <!-- Perlengkapan Kantor -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+              <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                <span class="text-3xl">🖥️</span>
+              </div>
+              <h3 class="text-2xl font-bold text-primary-900 mb-3">Perlengkapan Kantor</h3>
+              <p class="text-gray-600 mb-4">Peralatan operasional kantor</p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Komputer & Laptop
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Printer & Scanner
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Furniture Kantor
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> AC & Elektronik
+                </li>
+              </ul>
+            </div>
+
+            <!-- Kendaraan -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+              <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                <span class="text-3xl">🚗</span>
+              </div>
+              <h3 class="text-2xl font-bold text-primary-900 mb-3">Kendaraan</h3>
+              <p class="text-gray-600 mb-4">Armada kendaraan operasional</p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Mobil Operasional
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Motor Operasional
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Mobil Rental
+                </li>
+              </ul>
+            </div>
+
+            <!-- Properti -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+              <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                <span class="text-3xl">🏢</span>
+              </div>
+              <h3 class="text-2xl font-bold text-primary-900 mb-3">Properti</h3>
+              <p class="text-gray-600 mb-4">Gedung dan tanah milik KOPMA</p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Gedung Kantor
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Ruko KOPMART
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Gudang
+                </li>
+              </ul>
+            </div>
+
+            <!-- Peralatan Usaha -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                <span class="text-3xl">⚙️</span>
+              </div>
+              <h3 class="text-2xl font-bold text-primary-900 mb-3">Peralatan Usaha</h3>
+              <p class="text-gray-600 mb-4">Mesin dan peralatan produksi</p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Mesin Fotocopy
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Mesin Print
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Kulkas & Freezer
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Rak Display
+                </li>
+              </ul>
+            </div>
+
+            <!-- Aset Digital -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+              <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                <span class="text-3xl">💻</span>
+              </div>
+              <h3 class="text-2xl font-bold text-primary-900 mb-3">Aset Digital</h3>
+              <p class="text-gray-600 mb-4">Sistem dan software</p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Website & Sistem
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Software Lisensi
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Database
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary-600 mr-2">•</span> Domain & Hosting
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistik Inventaris -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl font-bold text-primary-900 mb-12 text-center">Statistik Inventaris</h2>
+
+          <div class="grid md:grid-cols-4 gap-6">
+            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+              <div class="text-5xl font-bold text-primary-600 mb-2">150+</div>
+              <div class="text-gray-600">Total Aset</div>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+              <div class="text-5xl font-bold text-kopma_yellow-600 mb-2">7</div>
+              <div class="text-gray-600">Unit Usaha</div>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+              <div class="text-5xl font-bold text-green-600 mb-2">5</div>
+              <div class="text-gray-600">Kendaraan</div>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+              <div class="text-5xl font-bold text-blue-600 mb-2">3</div>
+              <div class="text-gray-600">Properti</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengelolaan Inventaris -->
+    <section class="py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl font-bold text-primary-900 mb-8 text-center">Pengelolaan Inventaris</h2>
+
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                  <span class="text-2xl">📊</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-primary-900 mb-2">Sistem Terkomputerisasi</h3>
+                  <p class="text-gray-600">
+                    Seluruh inventaris dikelola menggunakan sistem digital untuk transparansi dan akurasi data
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                  <span class="text-2xl">🔍</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-primary-900 mb-2">Audit Berkala</h3>
+                  <p class="text-gray-600">
+                    Pemeriksaan inventaris dilakukan secara rutin setiap semester untuk memastikan kondisi aset
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center">
+                  <span class="text-2xl">🔧</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-primary-900 mb-2">Pemeliharaan Rutin</h3>
+                  <p class="text-gray-600">
+                    Program pemeliharaan preventif untuk memastikan aset tetap dalam kondisi optimal
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <span class="text-2xl">📝</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-primary-900 mb-2">Laporan Transparan</h3>
+                  <p class="text-gray-600">
+                    Laporan inventaris dapat diakses oleh anggota melalui rapat anggota tahunan (RAT)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12 bg-primary-900 text-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <h3 class="text-3xl font-bold mb-4">Akses Lengkap untuk Anggota</h3>
+          <p class="text-gray-300 mb-6">
+            Daftar menjadi anggota untuk mendapatkan akses penuh informasi inventaris dan laporan keuangan KOPMA UNNES
+          </p>
+          <a href="/keanggotaan" class="inline-block px-8 py-4 bg-kopma_yellow-500 hover:bg-kopma_yellow-400 text-primary-900 rounded-full font-bold text-lg shadow-lg transition-colors">
+            Daftar Keanggotaan
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

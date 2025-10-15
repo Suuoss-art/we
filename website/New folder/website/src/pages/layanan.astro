@@ -1,0 +1,153 @@
+---
+// src/pages/layanan.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+export const prerender = true;
+
+const services = [
+  {
+    title: "Simpan Pinjam",
+    description: "Layanan simpan pinjam dengan bunga kompetitif untuk mahasiswa UNNES",
+    features: [
+      "Tabungan dengan bunga menarik",
+      "Pinjaman dengan syarat mudah",
+      "Kartu anggota dengan berbagai keuntungan",
+      "Layanan online 24/7"
+    ],
+    icon: "💰"
+  },
+  {
+    title: "Toko Koperasi",
+    description: "Toko koperasi menyediakan berbagai kebutuhan mahasiswa dengan harga terjangkau",
+    features: [
+      "Alat tulis dan perlengkapan kuliah",
+      "Makanan dan minuman",
+      "Pakaian dan aksesoris",
+      "Elektronik dan gadget"
+    ],
+    icon: "🛒"
+  },
+  {
+    title: "Fotocopy & Printing",
+    description: "Layanan fotocopy dan printing dengan kualitas terbaik dan harga mahasiswa",
+    features: [
+      "Fotocopy hitam putih dan berwarna",
+      "Printing dokumen dan foto",
+      "Binding dan laminating",
+      "Scan dokumen"
+    ],
+    icon: "🖨️"
+  },
+  {
+    title: "Kantin Koperasi",
+    description: "Kantin koperasi menyediakan makanan sehat dan bergizi dengan harga terjangkau",
+    features: [
+      "Makanan tradisional dan modern",
+      "Minuman segar dan sehat",
+      "Menu harian yang bervariasi",
+      "Lingkungan yang nyaman"
+    ],
+    icon: "🍽️"
+  },
+  {
+    title: "Layanan Digital",
+    description: "Layanan digital untuk memudahkan transaksi dan akses informasi",
+    features: [
+      "Aplikasi mobile KOPMA",
+      "E-wallet dan pembayaran digital",
+      "Notifikasi dan reminder otomatis",
+      "Laporan transaksi real-time"
+    ],
+    icon: "📱"
+  },
+  {
+    title: "Konsultasi & Bimbingan",
+    description: "Konsultasi keuangan dan bimbingan kewirausahaan untuk mahasiswa",
+    features: [
+      "Konsultasi keuangan pribadi",
+      "Bimbingan kewirausahaan",
+      "Pelatihan manajemen keuangan",
+      "Mentoring bisnis"
+    ],
+    icon: "💡"
+  }
+];
+---
+
+<BaseLayout title="Layanan KOPMA UNNES">
+  <main>
+    <section class="hero-section">
+      <div class="container mx-auto px-4 py-16">
+        <h1 class="text-4xl md:text-6xl font-bold text-center mb-8">
+          Layanan <span class="text-blue-600">KOPMA UNNES</span>
+        </h1>
+        <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto">
+          Berbagai layanan yang kami sediakan untuk memenuhi kebutuhan 
+          dan meningkatkan kesejahteraan mahasiswa UNNES.
+        </p>
+      </div>
+    </section>
+    
+    <section class="services py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service) => (
+            <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div class="text-4xl mb-4 text-center">{service.icon}</div>
+              <h3 class="text-xl font-bold text-blue-600 mb-3 text-center">{service.title}</h3>
+              <p class="text-gray-700 mb-4 text-center">{service.description}</p>
+              <ul class="space-y-2">
+                {service.features.map((feature) => (
+                  <li class="text-sm text-gray-600 flex items-center">
+                    <span class="text-green-500 mr-2">✓</span>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    
+    <section class="cta-section py-16 bg-blue-600 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Bergabung dengan KOPMA UNNES</h2>
+        <p class="text-xl mb-8 opacity-90">
+          Dapatkan berbagai keuntungan dan layanan terbaik untuk mahasiswa UNNES
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/kontak" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            Hubungi Kami
+          </a>
+          <a href="/struktur" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+            Pelajari Lebih Lanjut
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+  
+  .hero-section h1 {
+    color: white;
+  }
+  
+  .hero-section p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .service-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+</style>

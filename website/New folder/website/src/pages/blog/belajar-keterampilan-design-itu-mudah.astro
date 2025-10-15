@@ -1,0 +1,81 @@
+---
+// Blog page for BELAJAR KETERAMPILAN DESIGN ITU MUDAH LOH!
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageTitle = "BELAJAR KETERAMPILAN DESIGN ITU MUDAH LOH!";
+const pageSlug = "belajar-keterampilan-design-itu-mudah";
+---
+
+<BaseLayout title={pageTitle}>
+  <div class="container mx-auto px-4 py-16">
+    <div class="max-w-4xl mx-auto">
+      <!-- Breadcrumb -->
+      <nav class="mb-8 text-sm">
+        <a href="/" class="text-green-600 hover:text-green-700">Beranda</a>
+        <span class="mx-2">/</span>
+        <a href="/blog" class="text-green-600 hover:text-green-700">Blog</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-600">{pageTitle}</span>
+      </nav>
+      
+      <!-- Article Header -->
+      <article class="prose prose-lg max-w-none">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">
+          {pageTitle}
+        </h1>
+        
+        <div class="flex items-center gap-4 text-gray-600 mb-8 pb-8 border-b">
+          <time>2024</time>
+          <span>•</span>
+          <span>KOPMA UNNES</span>
+        </div>
+        
+        <!-- Article Content -->
+        <div class="article-content prose max-w-none">
+          <p class="mb-4"><h1><strong>BELAJAR KETERAMPILAN DESIGN ITU MUDAH LOH!</strong></h1></p>
+
+<p class="mb-4"><a href="#respond">Tinggalkan Komentar</a></p>
+
+<p class="mb-4">/ <a href="/category/uncategorized/">Uncategorized</a> / Oleh <a href="/author/admin_kopma/ "Lihat seluruh tulisan oleh admin"">admin</a></p>
+
+<p class="mb-4"><strong>Pelatihan Keterampilan Design</strong></p>
+
+<p class="mb-4">Semarang, 18 Agustus 2022 KOPMA UNNES mengadakan pelatihan keterampilan design yang diikuti oleh anggota, staf, dan pengurus KOPMA UNNES. Pelatihan keterampilan design ini menggunakan aplikasi canva sebagai wadah membuat design. Alasan pemilihan canva sendiri dikarenakan mudah digunakan untuk pemula namun tetap memberikan hasil yang optimal. Tujuan adanya pelatihan keterampilan design ini adalah untuk memberikan pengetahuan dan dasar-dasar design kepada para anggota, staf dan pengurus KOPMA UNNES. Dikarenakan di era sekarang, keterampilan design sangat diperlukan untuk banyak hal.</p>
+
+<p class="mb-4"><img src="http://kopma.ukm.unnes.ac.id/wp-content/uploads/2023/01/1-1.png" alt="" class="w-full rounded-lg my-4">Sesi pemaparan dari pemateri</p>
+
+<p class="mb-4">Pelatihan keterampilan design ini dilakukan melalui _online zoom meeting._ Pemateri dari pelatihan ini sendiri adalah Kak Hafidz Muhammad Dzidan W selaku asisten IT di KOPMA UNNES. Jangan ditanyakan lagi masalah design segampang apa bagi dia hehehe……. Di pelatihan ini sendiri, dijelaskan secara urut fungsi dari setiap elemen di canva. Mulai dari yang dasar sampai terumit. Di akhir penjelasan, terdapat sebuah praktik sederhana bagaimana cara membuat pamflet yang pastinya mudah banget untuk dipahami.</p>
+
+<p class="mb-4"><img src="http://kopma.ukm.unnes.ac.id/wp-content/uploads/2023/01/2-1.png" alt="" class="w-full rounded-lg my-4">Sesi Foto Bersama</p>
+
+<p class="mb-4">Di pelatihan ini juga terdapat sesi tanya jawab dengan anggota, staf, maupun mengurus. Saat pelatihan berlangsung antusiasme anggota sangat tinggi dalam bertanya mengenai design. Banyak sekali ilmu dan tips-tips yang dibagikan oleh pemateri selama acara berlangsung. Semoga kedepannya ilmu yang di dapat dari pelatihan ini dapat bermanfaat yaa.</p>
+
+<p class="mb-4"><a href="/blog/kopma-unnes-buka-kelas-bahasa-asing-nih "KOPMA UNNES BUKA KELAS BAHASA ASING NIH!"">← Pos Sebelumnya</a></p>
+
+<p class="mb-4"><a href="/blog/first-meeting-anggota-kopma-unnes "<strong><em>First Meeting</em></strong><strong> Anggota KOPMA UNNES</strong>"">Selanjutnya Pos →</a></p>
+        </div>
+      </article>
+      
+      <!-- Contact Info -->
+      <div class="mt-12 pt-8 border-t bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg">
+        <h3 class="text-xl font-bold mb-4">Kontak KOPMA UNNES:</h3>
+        <div class="space-y-2 text-gray-700">
+          <p>📍 Gedung Kewirausahaan UNNES, Sekaran, Gunungpati, Semarang</p>
+          <p>📧 Email: kopmaunnes@gmail.com</p>
+          <p>📱 Instagram: @kopmaunnes</p>
+          <p>🌐 Website: www.kopmaukmunnes.com</p>
+        </div>
+      </div>
+      
+      <!-- Back to Blog -->
+      <div class="mt-8">
+        <a href="/blog" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          </svg>
+          Kembali ke Blog
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,313 @@
+# docker-compose.yml for KOPMA UNNES Website
+# Oracle Cloud VPS deployment configuration
+
+version: '3.8'
+
+services:
+  # Main Website Frontend
+  kopma-website:
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: kopma-website
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./public:/usr/share/nginx/html
+      - ./logs:/var/log/nginx
+      - ./ssl:/etc/nginx/ssl
+      - ./uploads:/var/www/html/uploads
+    environment:
+      - NODE_ENV=production
+      - VPS_MODE=true
+      - ORACLE_CLOUD=true
+    depends_on:
+      - mysql
+      - redis
+    restart: unless-stopped
+    networks:
+      - kopma-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # PHP Backend
+  kopma-backend:
+    image: php:8.2-fpm-alpine
+    container_name: kopma-backend
+    volumes:
+      - ../backend:/var/www/html
+      - ./uploads:/var/www/html/uploads
+      - ./logs:/var/log/php
+    environment:
+      - DB_HOST=mysql
+      - DB_NAME=kopma_db
+      - DB_USER=kopma_user
+      - DB_PASS=${DB_PASSWORD}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+    depends_on:
+      - mysql
+      - redis
+    restart: unless-stopped
+    networks:
+      - kopma-network
+    healthcheck:
+      test: ["CMD", "php", "-f", "/var/www/html/health.php"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # MySQL Database
+  mysql:
+    image: mysql:8.0
+    container_name: kopma-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=kopma_db
+      - MYSQL_USER=kopma_user
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./backups:/backups
+      - ./mysql:/etc/mysql/conf.d
+    restart: unless-stopped
+    networks:
+      - kopma-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: kopma-redis
+    volumes:
+      - redis_data:/data
+      - ./redis:/usr/local/etc/redis
+    restart: unless-stopped
+    networks:
+      - kopma-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Hidden Monitoring System
+  monitoring:
+    build: 
+      context: ../monitoring
+      dockerfile: Dockerfile
+    container_name: kopma-monitoring
+    volumes:
+      - ./logs:/app/logs
+      - ../monitoring:/app
+      - ./uploads:/app/uploads
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+      - WEBSITE_PATH=/usr/share/nginx/html
+      - LOG_FILE=/var/log/nginx/access.log
+    depends_on:
+      - kopma-website
+    restart: unless-stopped
+    networks:
+      - kopma-network
+    healthcheck:
+      test: ["CMD", "python3", "/app/health_check.py"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: kopma-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+      - ./logs:/var/log/nginx
+      - ../public:/usr/share/nginx/html
+    depends_on:
+      - kopma-website
+      - kopma-backend
+    restart: unless-stopped
+    networks:
+      - kopma-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # IP Rotation Service
+  ip-rotation:
+    build:
+      context: ../ip-masking
+      dockerfile: Dockerfile
+    container_name: kopma-ip-rotation
+    volumes:
+      - ./logs:/app/logs
+      - ../ip-masking:/app
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+      - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN}
+      - CLOUDFLARE_ZONE_ID=${CLOUDFLARE_ZONE_ID}
+    depends_on:
+      - kopma-website
+    restart: unless-stopped
+    networks:
+      - kopma-network
+    healthcheck:
+      test: ["CMD", "python3", "/app/health_check.py"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Backup Service
+  backup:
+    image: alpine:latest
+    container_name: kopma-backup
+    volumes:
+      - ./backups:/backups
+      - mysql_data:/var/lib/mysql
+      - redis_data:/data
+      - ../public:/usr/share/nginx/html
+    environment:
+      - DB_HOST=mysql
+      - DB_NAME=kopma_db
+      - DB_USER=kopma_user
+      - DB_PASS=${DB_PASSWORD}
+      - BACKUP_SCHEDULE=0 2 * * *
+      - BACKUP_RETENTION_DAYS=30
+    depends_on:
+      - mysql
+      - redis
+    restart: unless-stopped
+    networks:
+      - kopma-network
+    command: |
+      sh -c '
+        apk add --no-cache mysql-client redis
+        while true; do
+          echo "Starting backup at $(date)"
+          mysqldump -h mysql -u kopma_user -p${DB_PASSWORD} kopma_db > /backups/db_$(date +%Y%m%d_%H%M%S).sql
+          redis-cli -h redis --rdb /backups/redis_$(date +%Y%m%d_%H%M%S).rdb
+          tar -czf /backups/files_$(date +%Y%m%d_%H%M%S).tar.gz /usr/share/nginx/html
+          find /backups -name "*.sql" -mtime +30 -delete
+          find /backups -name "*.rdb" -mtime +30 -delete
+          find /backups -name "*.tar.gz" -mtime +30 -delete
+          echo "Backup completed at $(date)"
+          sleep 86400
+        done
+      '
+
+  # SSL Certificate Renewal
+  certbot:
+    image: certbot/certbot
+    container_name: kopma-certbot
+    volumes:
+      - ./ssl:/etc/letsencrypt
+      - ./logs:/var/log/letsencrypt
+    environment:
+      - EMAIL=${SSL_EMAIL}
+      - DOMAIN=${DOMAIN}
+    restart: unless-stopped
+    networks:
+      - kopma-network
+    command: |
+      sh -c '
+        while true; do
+          certbot renew --quiet --no-self-upgrade
+          sleep 86400
+        done
+      '
+
+  # Log Rotation
+  logrotate:
+    image: alpine:latest
+    container_name: kopma-logrotate
+    volumes:
+      - ./logs:/var/log
+      - ./logrotate.conf:/etc/logrotate.conf
+    restart: unless-stopped
+    networks:
+      - kopma-network
+    command: |
+      sh -c '
+        apk add --no-cache logrotate
+        while true; do
+          logrotate /etc/logrotate.conf
+          sleep 86400
+        done
+      '
+
+  # Health Check Service
+  health-check:
+    image: alpine:latest
+    container_name: kopma-health-check
+    volumes:
+      - ./logs:/var/log
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+    depends_on:
+      - kopma-website
+      - kopma-backend
+      - mysql
+      - redis
+    restart: unless-stopped
+    networks:
+      - kopma-network
+    command: |
+      sh -c '
+        apk add --no-cache curl
+        while true; do
+          echo "Health check at $(date)"
+          curl -f http://kopma-website/health || echo "Website health check failed"
+          curl -f http://kopma-backend/health || echo "Backend health check failed"
+          mysqladmin ping -h mysql || echo "MySQL health check failed"
+          redis-cli -h redis ping || echo "Redis health check failed"
+          sleep 300
+        done
+      '
+
+volumes:
+  mysql_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  kopma-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+
+
+

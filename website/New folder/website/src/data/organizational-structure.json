@@ -1,0 +1,176 @@
+{
+  "title": "Pengurus & Pengawas KOPMA UNNES Tahun 2023",
+  "subtitle": "Let's To Introduce Our",
+  "description": "Struktur organisasi KOPMA UNNES yang solid dengan pembagian tugas yang jelas untuk memberikan pelayanan terbaik bagi seluruh anggota.",
+  "leadership": [
+    {
+      "name": "Hafidz Muhammad Dzidan Walid",
+      "position": "Direktur Utama",
+      "image": "/assets/images/IMG_9424-scaled-e1686805897716-300x292.jpg",
+      "description": "Memimpin KOPMA UNNES dengan visi yang jelas untuk kemajuan koperasi mahasiswa."
+    }
+  ],
+  "departments": [
+    {
+      "name": "Administrasi Umum",
+      "members": [
+        {
+          "name": "Audy Anastasya",
+          "position": "Administrasi Umum",
+          "image": "/assets/images/IMG_9477-scaled-e1686806804452-300x257.jpg"
+        },
+        {
+          "name": "Dhita Indah Sari",
+          "position": "Administrasi Organisasi",
+          "image": "/assets/images/IMG_9460-scaled-e1700237845357.jpg"
+        },
+        {
+          "name": "Zahra Aurania Jauhari",
+          "position": "Inventaris",
+          "image": "/assets/images/IMG_9483-scaled-e1700237955585.jpg"
+        }
+      ],
+      "description": "Mengelola administrasi umum, organisasi, dan inventaris koperasi."
+    },
+    {
+      "name": "Keuangan",
+      "head": {
+        "name": "Artvanya Zahra Khalisa Adjani",
+        "position": "Bendahara Umum",
+        "image": "/assets/images/IMG_9467-scaled-e1700238186326.jpg"
+      },
+      "members": [
+        {
+          "name": "Sulistyowati",
+          "position": "Keuangan Organisasi",
+          "image": "/assets/images/IMG_9487-scaled-e1700238280205.jpg"
+        },
+        {
+          "name": "Nurul Aini Lessy",
+          "position": "Keuangan Usaha",
+          "image": "/assets/images/IMG_9485-scaled-e1700238523508.jpg"
+        },
+        {
+          "name": "Ulfa Syaroh Nurhayati",
+          "position": "Keuangan Organisasi",
+          "image": "/assets/images/IMG_9489-scaled-e1700238392538.jpg"
+        }
+      ],
+      "description": "Mengelola keuangan koperasi, pembukuan, dan laporan keuangan dengan akurat dan transparan."
+    },
+    {
+      "name": "PSDA",
+      "head": {
+        "name": "M Riski Amin Muminin",
+        "position": "Kepala Bidang PSDA",
+        "image": "/assets/images/IMG_9445-scaled-e1700238595880.jpg"
+      },
+      "members": [
+        {
+          "name": "Arya Editama",
+          "position": "Pendidikan",
+          "image": "/assets/images/IMG_9442-scaled-e1700238687876.jpg"
+        },
+        {
+          "name": "Khanafi Fathu Razaaq",
+          "position": "Pengkaderan",
+          "image": "/assets/images/IMG_9440-scaled-e1700238821116.jpg"
+        },
+        {
+          "name": "Gita Arvana",
+          "position": "Pelatihan",
+          "image": "/assets/images/IMG_9491-scaled-e1700238962541.jpg"
+        },
+        {
+          "name": "Fairuz Nabila Angelie Ardana",
+          "position": "Keanggotaan",
+          "image": "/assets/images/IMG_9481-scaled-e1700239124230-1536x1491.jpg"
+        }
+      ],
+      "description": "Mengelola pengembangan sumber daya anggota melalui pendidikan, pengkaderan, pelatihan, dan keanggotaan."
+    },
+    {
+      "name": "Usaha",
+      "head": {
+        "name": "Rizal Aditya Syahputra",
+        "position": "Kepala Bidang Usaha",
+        "image": "/assets/images/IMG_9431-scaled-e1700239235750.jpg"
+      },
+      "members": [
+        {
+          "name": "Nurrahman Firdaus",
+          "position": "KOPMART",
+          "image": "/assets/images/IMG_9433-scaled-e1700239300528.jpg"
+        },
+        {
+          "name": "Amna Kuffa Falastin",
+          "position": "KOPMART",
+          "image": "/assets/images/IMG_9494-scaled-e1700239553307.jpg"
+        },
+        {
+          "name": "Widya Hidayati",
+          "position": "Toga",
+          "image": "/assets/images/IMG_9457-scaled-e1700239803456.jpg"
+        },
+        {
+          "name": "Rendyka Ardiansyach",
+          "position": "JNE",
+          "image": "/assets/images/IMG_9447-scaled-e1700239404565.jpg"
+        },
+        {
+          "name": "Aprilia Wahyu Rustiningsih",
+          "position": "Marketing",
+          "image": "/assets/images/IMG_9449-scaled-e1700239721732.jpg"
+        }
+      ],
+      "description": "Mengelola unit usaha KOPMA termasuk KOPMART, Toga Wisuda, JNE, dan strategi pemasaran."
+    },
+    {
+      "name": "Media dan Humas",
+      "head": {
+        "name": "Nabila Amara Sani",
+        "position": "Kepala Bidang MEDHUM",
+        "image": "/assets/images/IMG_9469-scaled-e1700239988914.jpg"
+      },
+      "members": [
+        {
+          "name": "Gina Rahmatika",
+          "position": "Humas",
+          "image": "/assets/images/IMG_9465-scaled-e1700240054642.jpg"
+        },
+        {
+          "name": "U'un Amrul Jannah",
+          "position": "Sosial",
+          "image": "/assets/images/IMG_9474-scaled-e1700240215427.jpg"
+        },
+        {
+          "name": "Salma Aprilia Huda Putri",
+          "position": "Media",
+          "image": "/assets/images/IMG_9435-scaled-e1700240139924.jpg"
+        }
+      ],
+      "description": "Mengelola hubungan masyarakat, media sosial, dan kegiatan sosial kemasyarakatan."
+    },
+    {
+      "name": "Pengawas",
+      "head": {
+        "name": "Shelley Rifda Windani",
+        "position": "Ketua Pengawas",
+        "image": "/assets/images/IMG_9437-scaled-e1700240278443.jpg"
+      },
+      "members": [
+        {
+          "name": "Dinda Putri Amelia",
+          "position": "Anggota Pengawas",
+          "image": "/assets/images/IMG_9495-scaled-e1700240328371.jpg"
+        },
+        {
+          "name": "Finka Riski Maulida",
+          "position": "Anggota Pengawas",
+          "image": "/assets/images/IMG_9452-scaled-e1700240393201.jpg"
+        }
+      ],
+      "description": "Melakukan pengawasan terhadap jalannya organisasi dan memastikan koperasi berjalan sesuai dengan aturan yang berlaku."
+    }
+  ]
+}

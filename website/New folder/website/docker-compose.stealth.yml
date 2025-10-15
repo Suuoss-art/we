@@ -1,0 +1,240 @@
+version: '3.8'
+
+services:
+  # Public Layer - Cloudflare
+  cloudflare-proxy:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx-cloudflare.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+      - ./logs:/var/log/nginx
+    networks:
+      - public-network
+      - dmz-network
+    environment:
+      - CLOUDFLARE_IP_RANGE=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # DMZ Layer - Load Balancer
+  nginx-lb:
+    image: nginx:alpine
+    volumes:
+      - ./nginx-lb.conf:/etc/nginx/nginx.conf
+      - ./logs:/var/log/nginx
+    networks:
+      - dmz-network
+      - internal-network
+    environment:
+      - LB_ALGORITHM=round_robin
+      - HEALTH_CHECK=true
+      - IP_ROTATION=true
+    depends_on:
+      - app-primary
+      - app-secondary
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Application Layer - Hidden
+  app-primary:
+    build: 
+      context: .
+      dockerfile: Dockerfile.stealth
+    networks:
+      - internal-network
+      - app-network
+    expose:
+      - "3000"
+    environment:
+      - NODE_ENV=production
+      - HIDDEN=true
+      - ENCRYPTED=true
+      - DB_HOST=mysql
+      - DB_NAME=kopma_db
+      - DB_USER=kopma_user
+      - DB_PASS=${DB_PASSWORD}
+      - REDIS_HOST=redis
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+    depends_on:
+      - mysql
+      - redis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  app-secondary:
+    build: 
+      context: .
+      dockerfile: Dockerfile.stealth
+    networks:
+      - internal-network
+      - app-network
+    expose:
+      - "3000"
+    environment:
+      - NODE_ENV=production
+      - HIDDEN=true
+      - ENCRYPTED=true
+      - DB_HOST=mysql
+      - DB_NAME=kopma_db
+      - DB_USER=kopma_user
+      - DB_PASS=${DB_PASSWORD}
+      - REDIS_HOST=redis
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+    depends_on:
+      - mysql
+      - redis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Database Layer - Completely Isolated
+  mysql:
+    image: mysql:8.0
+    networks:
+      - database-network
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=kopma_db
+      - MYSQL_USER=kopma_user
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql/ssl:/etc/mysql/ssl
+      - ./backups:/backups
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Redis Cache - Internal
+  redis:
+    image: redis:7-alpine
+    networks:
+      - cache-network
+    volumes:
+      - redis_data:/data
+    command: redis-server --requirepass ${REDIS_PASSWORD} --appendonly yes
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Monitoring Layer - Stealth
+  monitoring:
+    build: 
+      context: ./monitoring
+      dockerfile: Dockerfile
+    networks:
+      - monitoring-network
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+      - STEALTH_MODE=true
+    volumes:
+      - ./logs:/app/logs
+      - ./monitoring:/app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "health-check.js"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # IP Rotation Service
+  ip-rotation:
+    build: 
+      context: ./ip-rotation
+      dockerfile: Dockerfile
+    networks:
+      - monitoring-network
+    environment:
+      - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN}
+      - ZONE_ID=${CLOUDFLARE_ZONE_ID}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "health-check.js"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Security Scanner
+  security-scanner:
+    build: 
+      context: ./security
+      dockerfile: Dockerfile
+    networks:
+      - monitoring-network
+    environment:
+      - SCAN_INTERVAL=3600
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+    volumes:
+      - ./logs:/app/logs
+      - ./security:/app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "health-check.js"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  public-network:
+    driver: bridge
+  dmz-network:
+    driver: bridge
+    internal: false
+  internal-network:
+    driver: bridge
+    internal: true
+  app-network:
+    driver: bridge
+    internal: true
+  database-network:
+    driver: bridge
+    internal: true
+  cache-network:
+    driver: bridge
+    internal: true
+  monitoring-network:
+    driver: bridge
+    internal: true
+
+volumes:
+  mysql_data:
+    driver: local
+  redis_data:
+    driver: local

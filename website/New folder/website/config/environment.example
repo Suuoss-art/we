@@ -1,0 +1,250 @@
+# KOPMA UNNES Website - Environment Configuration
+# Copy this file to .env and configure your values
+
+# =============================================================================
+# DATABASE CONFIGURATION
+# =============================================================================
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=kopma_db
+DB_USER=kopma_user
+DB_PASS=your_secure_database_password
+DB_CHARSET=utf8mb4
+DB_COLLATE=utf8mb4_unicode_ci
+
+# =============================================================================
+# REDIS CONFIGURATION
+# =============================================================================
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=your_redis_password
+REDIS_DB=0
+
+# =============================================================================
+# ENCRYPTION CONFIGURATION
+# =============================================================================
+ENCRYPTION_KEY=your_ultra_secure_encryption_key_here
+ENCRYPTION_ALGORITHM=AES-256-GCM
+KEY_ROTATION_INTERVAL=24
+
+# =============================================================================
+# TELEGRAM BOT CONFIGURATION
+# =============================================================================
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token
+TELEGRAM_CHAT_ID=your_telegram_chat_id
+TELEGRAM_WEBHOOK_URL=https://yourdomain.com/webhook/telegram
+
+# =============================================================================
+# CLOUDFLARE CONFIGURATION
+# =============================================================================
+CLOUDFLARE_API_TOKEN=your_cloudflare_api_token
+CLOUDFLARE_ZONE_ID=your_cloudflare_zone_id
+CLOUDFLARE_RECORD_ID=your_cloudflare_record_id
+
+# =============================================================================
+# WEBSITE CONFIGURATION
+# =============================================================================
+WEBSITE_URL=https://kopmaukmunnes.com
+ADMIN_URL=https://admin.kopmaukmunnes.com
+API_URL=https://kopmaukmunnes.com/api
+WEBSITE_NAME="KOPMA UNNES"
+WEBSITE_DESCRIPTION="Koperasi Mahasiswa Universitas Negeri Semarang"
+
+# =============================================================================
+# SECURITY CONFIGURATION
+# =============================================================================
+SECURITY_LEVEL=high
+THREAT_DETECTION=true
+IP_MASKING=true
+STEALTH_MONITORING=true
+AUTO_BLOCKING=true
+RATE_LIMITING=true
+
+# =============================================================================
+# MONITORING CONFIGURATION
+# =============================================================================
+MONITORING_ENABLED=true
+ANOMALY_DETECTION=true
+PERFORMANCE_MONITORING=true
+SECURITY_SCANNING=true
+LOG_ANALYSIS=true
+THREAT_INTELLIGENCE=true
+
+# =============================================================================
+# IP ROTATION CONFIGURATION
+# =============================================================================
+IP_ROTATION_ENABLED=true
+IP_ROTATION_INTERVAL=30
+IP_ROTATION_ALGORITHM=round-robin
+IP_ROTATION_FAILOVER=true
+IP_ROTATION_HEALTH_CHECK=true
+
+# =============================================================================
+# BACKUP CONFIGURATION
+# =============================================================================
+BACKUP_ENABLED=true
+BACKUP_INTERVAL=daily
+BACKUP_RETENTION=7
+BACKUP_ENCRYPTION=true
+BACKUP_COMPRESSION=true
+
+# =============================================================================
+# NGINX CONFIGURATION
+# =============================================================================
+NGINX_WORKER_PROCESSES=auto
+NGINX_WORKER_CONNECTIONS=1024
+NGINX_KEEPALIVE_TIMEOUT=65
+NGINX_CLIENT_MAX_BODY_SIZE=10M
+
+# =============================================================================
+# SSL/TLS CONFIGURATION
+# =============================================================================
+SSL_ENABLED=true
+SSL_CERT_PATH=/etc/letsencrypt/live/kopmaukmunnes.com/fullchain.pem
+SSL_KEY_PATH=/etc/letsencrypt/live/kopmaukmunnes.com/privkey.pem
+SSL_PROTOCOLS=TLSv1.2 TLSv1.3
+SSL_CIPHERS=ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512
+
+# =============================================================================
+# DOCKER CONFIGURATION
+# =============================================================================
+DOCKER_NETWORK=kopma_network
+DOCKER_VOLUME_PREFIX=kopma_
+DOCKER_RESTART_POLICY=unless-stopped
+
+# =============================================================================
+# LOGGING CONFIGURATION
+# =============================================================================
+LOG_LEVEL=info
+LOG_FILE=/var/log/kopma-website/application.log
+LOG_MAX_SIZE=10M
+LOG_MAX_FILES=5
+LOG_COMPRESSION=true
+
+# =============================================================================
+# CACHE CONFIGURATION
+# =============================================================================
+CACHE_ENABLED=true
+CACHE_DRIVER=redis
+CACHE_TTL=3600
+CACHE_PREFIX=kopma_
+CACHE_COMPRESSION=true
+
+# =============================================================================
+# EMAIL CONFIGURATION
+# =============================================================================
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email@gmail.com
+SMTP_PASS=your_email_password
+SMTP_SECURE=true
+SMTP_FROM=noreply@kopmaukmunnes.com
+
+# =============================================================================
+# FILE UPLOAD CONFIGURATION
+# =============================================================================
+UPLOAD_MAX_SIZE=10M
+UPLOAD_ALLOWED_TYPES=jpg,jpeg,png,gif,pdf,doc,docx
+UPLOAD_PATH=/var/www/html/uploads
+UPLOAD_ENCRYPTION=true
+
+# =============================================================================
+# API CONFIGURATION
+# =============================================================================
+API_RATE_LIMIT=100
+API_RATE_WINDOW=60
+API_AUTH_REQUIRED=true
+API_CORS_ENABLED=true
+API_CORS_ORIGINS=https://admin.kopmaukmunnes.com
+
+# =============================================================================
+# DEVELOPMENT CONFIGURATION
+# =============================================================================
+NODE_ENV=production
+DEBUG=false
+VERBOSE_LOGGING=false
+HOT_RELOAD=false
+
+# =============================================================================
+# ORACLE CLOUD CONFIGURATION
+# =============================================================================
+ORACLE_REGION=us-ashburn-1
+ORACLE_AVAILABILITY_DOMAIN=1
+ORACLE_SUBNET_ID=your_subnet_id
+ORACLE_SECURITY_LIST_ID=your_security_list_id
+
+# =============================================================================
+# NETLIFY CONFIGURATION
+# =============================================================================
+NETLIFY_SITE_ID=your_netlify_site_id
+NETLIFY_ACCESS_TOKEN=your_netlify_access_token
+NETLIFY_DEPLOY_HOOK=your_netlify_deploy_hook
+
+# =============================================================================
+# THIRD-PARTY SERVICES
+# =============================================================================
+GOOGLE_ANALYTICS_ID=GA-XXXXXXXXX
+GOOGLE_SEARCH_CONSOLE_ID=your_search_console_id
+FACEBOOK_PIXEL_ID=your_facebook_pixel_id
+TWITTER_PIXEL_ID=your_twitter_pixel_id
+
+# =============================================================================
+# SECURITY HEADERS
+# =============================================================================
+SECURITY_HEADERS=true
+CSP_ENABLED=true
+HSTS_ENABLED=true
+X_FRAME_OPTIONS=DENY
+X_CONTENT_TYPE_OPTIONS=nosniff
+X_XSS_PROTECTION=1; mode=block
+
+# =============================================================================
+# PERFORMANCE CONFIGURATION
+# =============================================================================
+PERFORMANCE_MONITORING=true
+PERFORMANCE_THRESHOLDS_CPU=80
+PERFORMANCE_THRESHOLDS_MEMORY=85
+PERFORMANCE_THRESHOLDS_DISK=90
+PERFORMANCE_THRESHOLDS_RESPONSE_TIME=2000
+
+# =============================================================================
+# BACKUP STORAGE
+# =============================================================================
+BACKUP_STORAGE_TYPE=local
+BACKUP_STORAGE_PATH=/opt/backups/kopma-website
+BACKUP_STORAGE_ENCRYPTION=true
+BACKUP_STORAGE_COMPRESSION=true
+
+# =============================================================================
+# NOTIFICATION CONFIGURATION
+# =============================================================================
+NOTIFICATION_EMAIL=true
+NOTIFICATION_TELEGRAM=true
+NOTIFICATION_SLACK=false
+NOTIFICATION_DISCORD=false
+
+# =============================================================================
+# MAINTENANCE CONFIGURATION
+# =============================================================================
+MAINTENANCE_MODE=false
+MAINTENANCE_MESSAGE="Website is under maintenance. Please check back later."
+MAINTENANCE_ALLOWED_IPS=127.0.0.1,::1
+
+# =============================================================================
+# FEATURE FLAGS
+# =============================================================================
+FEATURE_IP_ROTATION=true
+FEATURE_STEALTH_MONITORING=true
+FEATURE_THREAT_DETECTION=true
+FEATURE_PERFORMANCE_MONITORING=true
+FEATURE_AUTOMATED_BACKUPS=true
+FEATURE_SSL_AUTO_RENEWAL=true
+FEATURE_DOCKER_AUTO_UPDATE=true
+
+# =============================================================================
+# CUSTOM CONFIGURATION
+# =============================================================================
+# Add your custom configuration here
+# CUSTOM_SETTING_1=value1
+# CUSTOM_SETTING_2=value2
+# CUSTOM_SETTING_3=value3
